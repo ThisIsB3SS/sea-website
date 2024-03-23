@@ -3,6 +3,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { Header } from "@/components/Header";
+import {Hero} from "@/components/Hero";
+import {Home} from "@/app/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
