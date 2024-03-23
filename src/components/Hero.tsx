@@ -2,26 +2,26 @@ export function Hero() {
   return (
     <div className="relative overflow-hidden">
       {/* <!-- Content --> */}
-      <div className="relative z-10 flex flex-col items-center justify-center  text-center text-white">
-        <h1 className="text-8xl font-bold leading-tight tracking-tight">
-          Surfer sur le <span className="text-blue-500">Digital</span>
+      <div className="w-full relative z-10 flex flex-col items-center justify-center  text-center text-white">
+        <h1 className="text-9xl font-bold leading-tight tracking-tight">
+          Surfez sur le <span className="text-blue-500">Digital</span>
         </h1>
-        <h2 className="inline-block mt-5 max-w-xl text-2xl text-black">
+        {/* <h2 className="inline-block mt-5 max-w-xl text-2xl text-black">
           Création, Développement, Référencement Web
-        </h2>
-        <a
+        </h2> */}
+        {/* <a
           href="#contact"
           className="inline-block px-8 py-3 mt-8 text-sm font-semibold leading-none text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600"
         >
           Contact
-        </a>
+        </a> */}
       </div>
       {/* <!-- End Content --> */}
       {/* CTA Section */}
-      <div className="w-full p-4 ">
-        <a href="contact">
-        <div className="flex justify-around items-center w-full min-h-full border border-grey shadow-md rounded-full bg-white bg-opacity-50 bg-background-blur-3xl">
-          <h2 className=" text-2xl italic  text-black max-w-80 ">
+      <div className=" w-full p-20 mt-10 transform hover:scale-105 transition duration-300 ">
+        <a href="contact" className="transform hover:scale-110 transition duration-300">
+        <div className="flex p-4 justify-around items-center w-full min-h-full border border-grey shadow-md rounded-full bg-white bg-opacity-50 bg-background-blur-3xl">
+          <h2 className=" text-2xl italic  text-slate-800 max-w-80 ">
             Création, Développement, Stratégie Web & Mobile{' '}
           </h2>
           <span className=" text-3xl font-semibold  text-blue-500 ">
