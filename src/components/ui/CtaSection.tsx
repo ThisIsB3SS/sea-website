@@ -1,6 +1,6 @@
 export function CtaSection() {
   return (
-    <div className="hero_cta_section w-full p-16 mt-20 mb-10 mx-auto overflow-visible ">
+    <div className="hero_cta_section w-full p-16 mt-20 mb-10 mx-auto overflow-visible animate__animated animate__fadeIn">
       <a
         href="contact"
         className="flex justify-center items-center text-center"
