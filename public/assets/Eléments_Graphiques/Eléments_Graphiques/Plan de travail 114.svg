@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1040.86 541.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Dégradé_sans_nom_3);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #03045e;
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_3" data-name="Dégradé sans nom 3" x1="-68.2" y1="291.4" x2="783.62" y2="33.19" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#72f5cf"/>
+      <stop offset=".37" stop-color="#4797a3"/>
+      <stop offset=".8" stop-color="#162e71"/>
+      <stop offset="1" stop-color="#03045e"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="M1040.86,0c-327.71,35.15-457.9,76.08-504.36,112.46-3.38,2.64-25.75,20.35-59.09,38.81-35.25,19.52-80.61,44.34-140.06,44.93-19.75.2-52.75-2.17-92.21-18.89,6.59-.23,16.12-.65,27.57-1.53,32.08-2.46,82.84-6.36,126.66-24.51,30.45-12.61,48.11-28.2,66.62-42.9,37.37-29.68,95-69.11,181.43-108.37h393.44Z"/>
+  <path class="cls-1" d="M861.38,0c-225.24,12.59-335.45,62.13-394.39,108.37-11.29,8.85-32.37,26.74-66.62,42.9-99.5,46.95-172.09,14.19-228.53,28.59C113.55,194.73,42.23,267.61,0,541.44V0h861.38Z"/>
+</svg>
