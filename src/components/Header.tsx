@@ -1,4 +1,4 @@
-import SEA_Logo from '../../public/assets/Logo_SEA_Webstudio.svg';
+import SEA_Logo from '../../public/assets/Logo_entier_SEA_Webstudio.svg';
 import Image from 'next/image';
 import {
   DropdownMenu,
@@ -17,7 +17,7 @@ export function Header() {
           <Image
             src={SEA_Logo}
             alt="logo SEA Webstudio"
-            className="w-20 transition-transform"
+            className="w-96 transition-transform"
           />
         </a>
         <div className="flex items-center space-x-4">
