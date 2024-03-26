@@ -4,9 +4,12 @@ import Marquee from 'react-fast-marquee';
 
 export function CarouselBanner() {
   return (
-    <div className="carouselBanner_wrapper backdrop-blur-[2px] relative ">
-      <h2 className="carouselBanner_title text-5xl font-semibold mb-10">
-        Nos outils de tous les jours
+    <div className="carouselBanner_wrapper w-full ">
+      <h2 className="About_title text-2xl md:text-3xl  font-montserrat font-thin italic text-blue-800 px-6 md:px-20">
+          TECHNOLOGIES
+        </h2>
+      <h2 className="carouselBanner_title text-4xl sm:text-6xl md:text-7xl md:w-full text-white px-6 md:px-20 mb-10">
+        Nos <span className="font-pinkerston">Outils</span> De Tous Les Jours
       </h2>
       <div className="carouselBanner_innerContainer">
         <div className="carouselBanner_innerContainer2">

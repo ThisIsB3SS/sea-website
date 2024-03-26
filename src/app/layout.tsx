@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
       </head>
-      <body className={inter.className} style={{overflowX: 'hidden', backgroundColor: '#e7ebff'}}
+      <body className={inter.className} style={{overflowX: 'hidden', backgroundColor: '#e7ebff',}}
       >
         <ThemeProvider
           attribute="class"
