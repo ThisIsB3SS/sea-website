@@ -12,7 +12,6 @@ export function Hero() {
           </span>
         </h1>
       </div>
-      <CtaSection />
     </div>
   );
 }

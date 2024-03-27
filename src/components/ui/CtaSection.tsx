@@ -1,11 +1,13 @@
+import '../../styles/custom.css';
+
 export function CtaSection() {
   return (
-    <div className="hero_cta_section w-full lg:p-16 mt-8 sm:mt-20 mb-10 mx-auto overflow-visible animate__animated animate__fadeIn">
+    <div className="hero_cta_section z-10 w-full lg:p-16 mt-8 sm:mt-20 mb-10 mx-auto overflow-visible animate__animated animate__fadeIn">
       <a
         href="contact"
         className="flex justify-center items-center text-center"
       >
-        <div className="parent_hover overflow-visible flex flex-col lg:flex-row p-4 gap-4 justify-around items-center  min-h-full border border-gray-50 shadow-md rounded-3xl sm:rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-500">
+        <div className="parent_hover overflow-visible flex flex-col sm:flex-row p-6 gap-4 justify-around items-center  min-h-full border border-gray-50 shadow-md rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-500">
           <h2 className="font-montserrat text-xl xl:text-2xl italic text-slate-800  ">
             Création, Développement,
             <br /> Stratégie Web & Mobile{' '}

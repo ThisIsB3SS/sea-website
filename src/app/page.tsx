@@ -1,5 +1,4 @@
 import { CarouselBanner } from '@/components/CarouselBanner';
-import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Projects } from '@/components/Projects';
 import { ModeToggle } from '@/components/mode-toggle';
@@ -7,6 +6,7 @@ import { url } from 'inspector';
 import Image from 'next/image';
 import { About } from '@/components/About';
 import { Testimonials } from '@/components/Testimonials';
+import { CtaSection } from '@/components/ui/CtaSection';
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       }}
     >
       <Hero />
+      <CtaSection />
       <CarouselBanner />
       <About />
       <Projects />
