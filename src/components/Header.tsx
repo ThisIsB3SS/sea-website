@@ -1,4 +1,3 @@
-
 import SEA_Logo from '../../public/assets/Logo_entier_SEA_Webstudio.svg';
 import Image from 'next/image';
 
@@ -7,17 +6,17 @@ import DropdownMenu from '@/components/ui/MyDropdownMenu';
 
 export function Header() {
   return (
-    <header className="fixed flex items-start w-full max-h-20 p-4 top-0 left-0 z-50 bg-transparent ">
+    <header className="fixed flex items-start w-full max-h-20 p-4 top-0 left-0 z-50 bg-transparent shadow-md ">
       <nav className="flex items-center justify-between px-4 max-h-20 w-full rounded-2xl border border-white border-opacity-25  bg-white bg-opacity-50 backdrop-blur-xl ">
-        <a href="/" className="flex justify-start ">
+        <a href="/" className="flex justify-start">
           <Image
             src={SEA_Logo}
             alt="logo SEA Webstudio"
-            className="w-96 transition-transform"
+            className="xs:scale-125 xs:ml-1 sm:ml-0 sm:scale-105 md:w-96 transition-transform "
           />
         </a>
         <div className="flex items-center space-x-4">
-        <DropdownMenu/>
+          <DropdownMenu/>
         </div>
       </nav>
     </header>

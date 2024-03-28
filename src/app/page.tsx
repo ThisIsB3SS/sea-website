@@ -19,6 +19,13 @@ export default function Home() {
     >
       <Hero />
       <CtaSection />
+      {/* <iframe
+        src="https://lottie.host/embed/5ecbd2b4-eaaa-4793-b186-c20a9f0c5daa/uA9TIWUWr4.json"
+        height={800}
+        width={800}
+        style={{zIndex:0}}
+      ></iframe> */}
+
       <CarouselBanner />
       <About />
       <Projects />

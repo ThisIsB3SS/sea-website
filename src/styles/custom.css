@@ -1,10 +1,21 @@
-h1,h2,h3,h4,h5,h6,span,p{
-    anti-aliasing: subpixel-antialiased;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  anti-aliasing: antialiased;
 }
-.Socials a{
-    transition: all 0.3s ease;
+.Socials a {
+  transition: all 0.3s ease;
 }
-.Socials a:hover{
-    transform: scale(1.10)
+.Socials a:hover {
+  transform: scale(1.1);
+}
+.dropdown-menu-content {
+  @media (min-width: 640px) and (max-width: 714px) {
+    margin-top: 6em !important;
+  }
 }
