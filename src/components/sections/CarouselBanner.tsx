@@ -1,4 +1,4 @@
-import logos from '../../public/assets/logos_carousel/list_logos_carousel.json';
+import logos from '../../../public/assets/logos_carousel/list_logos_carousel.json';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
@@ -6,8 +6,8 @@ export function CarouselBanner() {
   return (
     <div className="carouselBanner_wrapper w-full ">
       <h2 className="About_title text-2xl md:text-3xl  font-montserrat font-thin italic text-blue-800 px-6 md:px-20">
-          TECHNOLOGIES
-        </h2>
+        TECHNOLOGIES
+      </h2>
       <h2 className="carouselBanner_title text-4xl sm:text-6xl md:text-7xl md:w-full text-white px-6 md:px-20 mb-10">
         Nos <span className="font-pinkerston">Outils</span> De Tous Les Jours
       </h2>
@@ -19,7 +19,6 @@ export function CarouselBanner() {
             direction="right"
             speed={40}
             loop={0}
-
             className="mb-10"
           >
             <ul className="carouselBanner flex items-center justify-center gap-12">
@@ -36,15 +35,9 @@ export function CarouselBanner() {
               ))}
             </ul>
           </Marquee>
-                <div className="separator border-t-2 border-gray-800 w-2/3 relative mx-auto mb-10"></div>
+          <div className="separator border-t-2 border-gray-800 w-2/3 relative mx-auto mb-10"></div>
           {/* Liste 2 */}
-          <Marquee
-            play={true}
-            direction="left"
-            speed={40}
-            loop={0}
-         
-          >
+          <Marquee play={true} direction="left" speed={40} loop={0}>
             <ul className="carouselBanner flex items-center justify-center gap-12">
               {Object.entries(logos.list2).map(([key, value]) => (
                 <li
@@ -62,7 +55,7 @@ export function CarouselBanner() {
               ))}
             </ul>
           </Marquee>
-          </div>
+        </div>
       </div>
     </div>
   );

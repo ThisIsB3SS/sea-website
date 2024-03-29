@@ -1,0 +1,23 @@
+{
+    "testimonials": [
+        {
+            "auteur": "Alice Dupont",
+            "avatar": "/assets/testimonials_avatar/150.jpg",
+            "poste": "Directrice Marketing chez TechVision",
+            "message": "Travailler avec l'agence de développement web a été une expérience incroyable. Leur équipe a su comprendre nos besoins et a livré un site web exceptionnel en un temps record. Je recommande vivement leurs services!"
+        },
+        {
+            "auteur": "Thomas Lefevre",
+            "avatar": "/assets/testimonials_avatar/150.jpg",
+
+            "poste": "Responsable des Ventes chez DigitalSolutions",
+            "message": "Nous avons confié la refonte de notre site web à cette agence et nous sommes ravis du résultat. Le design est moderne, la navigation intuitive et notre trafic a augmenté de façon significative. Merci pour votre excellent travail!"
+        },
+        {
+            "auteur": "Sophie Martin",
+            "avatar": "/assets/testimonials_avatar/150.jpg",
+            "poste": "Chef de Projet chez WebTechPro",
+            "message": "Collaborer avec cette agence a été une expérience sans faille. Leur professionnalisme, leur réactivité et leur expertise technique ont été essentiels pour le succès de notre projet. Nous sommes plus que satisfaits!"
+        }
+    ]
+}
