@@ -16,11 +16,11 @@ function DropdownMenu() {
           isDropdownOpen ? 'translate-x-0' : 'translate-x-96'
         }`}
       >
-        <ul className="flex flex-col h-full w-full items-center justify-center gap-10 list-none xs:text-xl sm:text-2xl text-blue-800 text-justify text-nowrap  ">
+        <ul className="flex flex-col h-full w-full items-center justify-center gap-10 list-none xs:text-xl sm:text-2xl text-white drop-shadow-md text-justify text-nowrap  ">
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
             <a
               className="dropdown-menu-content-item font-semibold "
-              href="/about"
+              href="#about"
             >
               A propos
             </a>
@@ -28,7 +28,7 @@ function DropdownMenu() {
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
             <a
               className="dropdown-menu-content-item font-semibold"
-              href="/projects"
+              href="#projects"
             >
               Projets
             </a>
@@ -36,7 +36,7 @@ function DropdownMenu() {
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
             <a
               className="dropdown-menu-content-item font-semibold"
-              href="/services"
+              href="#services"
             >
               Services
             </a>
@@ -44,7 +44,7 @@ function DropdownMenu() {
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
             <a
               className="dropdown-menu-content-item font-semibold"
-              href="/contact"
+              href="#contact"
             >
               Contact
             </a>

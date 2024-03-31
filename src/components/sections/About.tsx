@@ -1,6 +1,7 @@
 export function About() {
   return (
     <div className="About_section w-full flex flex-col justify-center items-center px-6 md:px-20 mt-10 md:mt-20">
+      
       <div className="About_content_1  w-full">
         <h2 className="About_title text-2xl md:text-3xl  font-montserrat font-thin italic text-blue-800">
           SEA WEBSTUDIO
@@ -41,9 +42,9 @@ export function About() {
           <a
             href="/contact"
             className="border rounded-lg border-white px-4
-          text-white"
+          text-black bg-white hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300 ease-in-out"
           >
-            Show more
+            Nous contacter
           </a>
         </button>
       </div>

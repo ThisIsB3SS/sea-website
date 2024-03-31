@@ -6,10 +6,10 @@ export function Footer() {
   return (
     <footer className="flex flex-col md:flex-row px-16 pb-4 justify-between items-center max-h-80 min-h-32 text-white bg-gradient-to-t from-black to-custom-blue">
       {/* 1ère colonne */}
-      <div className="copyright font-thin order-2 flex flex-row md:flex-col mt-4 md:mt-0 ">
-        <p>
+      <div className="copyright font-thin order-2 flex flex-row sm:flex-col mt-4 md:mt-0 ">
+        <span className="">
           © Copyright 2024 <br /> All Rights Reserved <br /> Sea Webstudio
-        </p>
+        </span>
       </div>
 
       {/* 2ème colonne */}

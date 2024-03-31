@@ -6,7 +6,7 @@ import DropdownMenu from '@/components/ui/MyDropdownMenu';
 
 export function Header() {
   return (
-    <header className="fixed flex items-start w-full max-h-20 p-4 top-0 left-0 z-50 bg-transparent shadow-md ">
+    <header className="fixed flex items-start w-full h-f p-4 top-0 left-0 z-50 bg-transparent ">
       <nav className="flex items-center justify-between px-4 max-h-20 w-full rounded-2xl border border-white border-opacity-25  bg-white bg-opacity-50 backdrop-blur-xl ">
         <a href="/" className="flex justify-start">
           <Image
