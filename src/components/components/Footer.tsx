@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import '../styles/custom.css';
+import '../../styles/custom.css';
 import Markdown from 'react-markdown';
 
 export function Footer() {

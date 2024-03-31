@@ -3,10 +3,10 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Inter } from 'next/font/google';
 import '../styles/globals.css';
 import '../styles/custom.css';
-import { Header } from '@/components/Header';
+import { Header } from '@/components/components/Header';
 import 'animate.css';
-import { Footer } from '@/components/Footer';
-
+import { Footer } from '@/components/components/Footer';
+import { FormspreeProvider } from '@formspree/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {

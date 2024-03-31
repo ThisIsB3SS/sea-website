@@ -1,4 +1,4 @@
-import { projects } from './Projects.json';
+import projects from '../../../public/data/projects.json';
 import Image from 'next/image';
 import '../../styles/custom.css';
 export function Projects() {
@@ -31,7 +31,7 @@ export function Projects() {
               <a id="Project_item_link h-full" href={project.link}>
                 <div className="Projects_section_item_content w-full flex flex-col items-center lg:flex-row  ">
                   <Image
-                    className="Projects_section_item_image order-1 max-h-[300px] mb-10 lg:relative lg:right-10 xl:right-40 2xl:right-96 z-20 rounded-xl lg:opacity-0 group-hover:opacity-100 group-hover:scale-105 lg:group-hover:scale-125 xl:group-hover:scale-150 transition-all duration-300 ease-in-out"
+                    className="Projects_section_item_image order-1 max-h-[300px] mb-10 lg:relative lg:right-10 xl:right-40 2xl:right-96 z-20 rounded-xl lg:opacity-50 group-hover:opacity-100 group-hover:scale-105  transition-all duration-300 ease-in-out"
                     src={project.image}
                     alt={project.title}
                     width={500}

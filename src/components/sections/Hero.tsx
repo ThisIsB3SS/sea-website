@@ -1,6 +1,6 @@
 import { color } from 'framer-motion';
-import { CarouselBanner } from './sections/CarouselBanner';
-import { CtaSection } from './ui/CtaSection';
+import { CarouselBanner } from './CarouselBanner';
+import { CtaSection } from '../ui/CtaSection';
 
 export function Hero() {
   return (

@@ -78,11 +78,21 @@ const config = {
           from: { color: "bg-blue-0" },
           to: { color: "bg-blue-800" },
         },
+        rotateYoyo: {
+          '0%, 100%': { transform: 'rotate(20deg)' },
+          '50%': { transform: 'rotate(0deg)' },
+        },
+        moveUpAndDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "color": "color 0.2s ease-out",
+        'rotate-yoyo': 'rotateYoyo 3s infinite ease',
+        'move-up-and-down': 'moveUpAndDown 3s infinite ease-in-out',
       },
       fontFamily: {
         pinkerston: ["'Pinkerston'", 'sans-serif'],

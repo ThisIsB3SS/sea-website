@@ -1,4 +1,4 @@
-import SEA_Logo from '../../public/assets/Logo_entier_SEA_Webstudio.svg';
+import SEA_Logo from '../../../public/assets/Logo_entier_SEA_Webstudio.svg';
 import Image from 'next/image';
 
 import { MenuBarIcon } from '@/components/icons/MenuBarIcon';

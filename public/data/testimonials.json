@@ -1,0 +1,45 @@
+[
+    {
+        "auteur": "Delphine Dumas",
+        "avatar": "/assets/testimonials_avatar/delphine-dumas.png",
+        "poste": "Artiste Conteuse",
+        "message": "Très satisfaite de la prestation de SEA Webstudio. Ecoute, accompagnement, créativité et professionnalisme sont au rendez-vous pour répondre exactement au résultat souhaité : un joli site mis en ligne en une semaine. Merci !",
+        "link": "https://www.conteuse-delphinedumas.fr"
+    },
+    {
+        "auteur": "Gabrielle Alya",
+        "avatar": "/assets/testimonials_avatar/gabrielle-alya.jpg",
+        "poste": "Artiste Chanteuse Musicienne",
+        "message": "Très satisfaite de cette collaboration.Sébastien de SEA Webstudio a créé mon site internet Gabriellealya.com et je suis ravie du travail effectué. Il a su structurer, référencer, me proposer un Design à mon goût, bref, tout ce qui est nécessaire en la matière, tout en étant attentif à mes demandes particulières. (Inscription newsletter, réseaux sociaux, témoignages etc).J'apprécie particulièrement sa très grande réactivité, son écoute, ses idées et son suivi qui en font un professionnel avec lequel il est agréable de travailler en toute confiance.",
+        "link": "https://www.gabriellealya.com",
+        "album": "https://www.gabriellealya.com/album"
+    },
+    {
+        "auteur": "Charlène B.",
+        "avatar": "/assets/testimonials_avatar/150.jpg",
+        "poste": "Chef de Projet chez Emporium",
+        "message": "Excellente prestation et très bonne communication. compétences techniques très bonnes et très bonnes connaissances de Shopify. Travaillez avec eux vous gagnerez du temps ... Je recommande vivement .",
+        "link": "https://www.veganaa.com"
+    },
+    {
+        "auteur": "Sylviane Peltier",
+        "avatar": "/assets/testimonials_avatar/peltier.png",
+        "poste": "Artiste Conteuse",
+        "message": "SEA Webstudio a réalisé mon site internet et je suis très satisfaite du résultat. Sébastien est très professionnel, à l'écoute et réactif. Il a su répondre à mes attentes et m'a donné de bons conseils. Je recommande vivement SEA Webstudio.",
+        "link": "https://www.louisedesmons.com"
+    },
+    {
+        "auteur": "Bill Gates",
+        "avatar": "/assets/testimonials_avatar/bill-gates.png",
+        "poste": "Ex-CEO of Microsoft",
+        "message": "SEA Webstudio did a wonderful job to improve our website. They are very professional and efficient. I highly recommend them.",
+        "link": "https://www.microsoft.com"
+    },
+    {
+        "auteur": "Lycos",
+        "avatar": "/assets/testimonials_avatar/lycos.png",
+        "poste": "Ex-CEO of Lycos",
+        "message": "Woof ! Woof ! SEA Webstudio woof !",
+        "link": "https://www.lycos.com"
+    }
+]

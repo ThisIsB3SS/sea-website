@@ -1,5 +1,5 @@
 'use client';
-import { testimonials } from './Testimonials.json';
+import testimonials from '../../../public/data/testimonials.json';
 import { QuoteIconStart, QuoteIconEnd } from '../icons/QuoteIcon';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -60,6 +60,15 @@ export function Testimonials() {
                 >
                   Son site
                 </a>
+                {/* Uniquement pour Gabrielle Alya */}
+                {element.album ? (
+                  <a
+                    href={element.album}
+                    className="lien mt-2 text-lg text-center p-2  max-w-fit underline underline-offset-2 transition-all duration-300 ease-in-out   hover:text-white"
+                  >
+                    Son album
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>

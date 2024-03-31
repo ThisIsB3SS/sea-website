@@ -2,6 +2,7 @@
 import { MenuBarIcon } from '../icons/MenuBarIcon';
 import { useState } from 'react';
 import '../../styles/custom.css';
+import Link from 'next/link';
 
 function DropdownMenu() {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
@@ -20,7 +21,7 @@ function DropdownMenu() {
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
             <a
               className="dropdown-menu-content-item font-semibold "
-              href="#about"
+              href="/#about"
             >
               A propos
             </a>
@@ -28,7 +29,7 @@ function DropdownMenu() {
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
             <a
               className="dropdown-menu-content-item font-semibold"
-              href="#projects"
+              href="/#projects"
             >
               Projets
             </a>
@@ -36,18 +37,18 @@ function DropdownMenu() {
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
             <a
               className="dropdown-menu-content-item font-semibold"
-              href="#services"
+              href="/#services"
             >
               Services
             </a>
           </li>
           <li className="hover:scale-110 hover:underline decoration-emerald-400 underline-offset-4 transition-transform duration-100 ease-in-out">
-            <a
+            <Link
               className="dropdown-menu-content-item font-semibold"
-              href="#contact"
+              href="/contact"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
