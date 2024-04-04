@@ -9,7 +9,7 @@ type Inputs = {
   phone: string;
 };
 
-export default function Contact() {
+export default function Contact(): React.JSX.Element {
   const {
     formState: { errors, isSubmitSuccessful, isSubmitting },
     handleSubmit,
@@ -42,7 +42,7 @@ export default function Contact() {
   return (
     <main className="w-full min-h-screen flex flex-col  items-center justify-center p-12 gap-4 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
       <div className="contact_form_title flex flex-col gap-6 lg:gap-0 lg:flex-row items-center justify-center">
-        <h1 className="mt-24 text-2xl sm:text-4xl lg:text-6xl font-montserrat font-bold text-white text-wrap">
+        <h1 className="mt-32 text-2xl sm:text-4xl lg:text-6xl font-montserrat font-bold text-white text-wrap">
           {isSubmitSuccessful
             ? 'Merci de nous avoir contacté !'
             : 'Contactez-nous'}
@@ -58,28 +58,45 @@ export default function Contact() {
           height={200}
           className={
             isSubmitSuccessful
-              ? 'animate-move-up-and-down h-20 w-20 md:h-40 md:w-40 lg:h-60 lg:w-60 z-50'
+              ? 'animate-move-up-and-down h-20 w-20 md:h-40 md:w-40 lg:h-60 lg:w-60'
               : 'animate-rotate-yoyo'
           }
         />
+        {/* youtube video hidden, "yeah !" */}
+        {isSubmitSuccessful ? (
+          <iframe
+            className="hidden"
+            aria-hidden="true"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/idA7RsiOpqA?si=2ZkPYk_nuP9rvp9D&amp;controls=0&autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        ) : null}
       </div>
       {/* Animation Fireworks */}
       {isSubmitSuccessful ? (
         <iframe
+          loading="lazy"
           src="https://lottie.host/embed/74241b77-4958-483d-b2dc-668f5aa16277/t44RX5krsj.json"
           height={400}
           width={400}
         />
       ) : null}{' '}
-      <div className="flex flex-col w-3/4 gap-2">
+      <div className="flex flex-col w-3/4 gap-2 mt-10">
         {isSubmitSuccessful ? null : (
-          <h2 className="text-4xl  font-semibold  ">Un Nouveau Projet ?</h2>
-        )}
+          <div className="flex flex-col sm:flex-row justify-between w-full ">
+            <h2 className="text-2xl sm:text-4xl text-blue-800  font-semibold  ">
+              Un Nouveau Projet ?
+            </h2>
 
-        {isSubmitSuccessful ? null : (
-          <h3 className="text-3xl font-pinkerston font-semibold text-white">
-            Parlons en <span className="font-montserrat">!</span>
-          </h3>
+            <h3 className="text-2xl sm:text-3xl font-pinkerston font-semibold text-white">
+              Parlons en <span className="font-montserrat">!</span>
+            </h3>
+          </div>
         )}
 
         <div
@@ -89,8 +106,8 @@ export default function Contact() {
         >
           {isSubmitSuccessful ? (
             <div className="flex flex-col items-center gap-10">
-              <h2 className="text-xl text-nowrap sm:text-3xl lg:text-5xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
-                Message Envoyé ! A bientôt !
+              <h2 className="text-lg text-nowrap sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
+                Message bien reçu, nous vous répondrons bientôt !
               </h2>
               <a
                 href="/"
@@ -168,10 +185,10 @@ export default function Contact() {
                   id="message"
                   rows={10}
                   aria-placeholder="Message"
-                  placeholder="Incluez ici toutes informations nécessaires à votre projet."
+                  placeholder="Incluez ici toute information nécessaire à votre projet."
                   required
                   aria-required="true"
-                  className=" h-full w-full p-4 rounded-lg bg-white bg-opacity-50 border border-white placeholder-black"
+                  className=" h-full w-full p-4 rounded-lg bg-white bg-opacity-50 border border-white placeholder-black placeholder-opacity-70"
                 />
               </div>
               {errors.root && (
@@ -191,7 +208,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="p-1 sm:p-4 border rounded-2xl sm:rounded-full w-1/2 font-semibold text-xl sm:text-2xl hover:bg-blue-500 hover:text-white active:bg-blue-800 text-white transition-colors duration-300 ease-in-out"
+                  className="p-1 sm:p-4 border rounded-2xl sm:rounded-full w-fit font-semibold text-xl sm:text-2xl hover:bg-blue-500 hover:text-white active:bg-blue-800 text-white transition-colors duration-300 ease-in-out"
                 >
                   {isSubmitting ? 'En cours d`envoi...' : ' Envoyer 🚀 '}
                 </button>

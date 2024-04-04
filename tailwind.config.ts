@@ -84,7 +84,7 @@ const config = {
         },
         moveUpAndDown: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(-40px)' },
         },
       },
       animation: {
@@ -92,7 +92,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "color": "color 0.2s ease-out",
         'rotate-yoyo': 'rotateYoyo 3s infinite ease',
-        'move-up-and-down': 'moveUpAndDown 3s infinite ease-in-out',
+        'move-up-and-down': 'moveUpAndDown 4s infinite ease-in-out',
       },
       fontFamily: {
         pinkerston: ["'Pinkerston'", 'sans-serif'],

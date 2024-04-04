@@ -5,6 +5,8 @@ import { ModeToggle } from '@/components/mode-toggle';
 import { About } from '@/components/sections/About';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { CtaSection } from '@/components/ui/CtaSection';
+import Image from 'next/image';
+import  surf  from '../../public/assets/surf.png';
 
 export default function Home() {
   const bg1 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
@@ -13,6 +15,7 @@ export default function Home() {
       <div className="min-h-screen">
         <Hero />
         <CtaSection />
+        <Image src={surf} alt={"surfing"} className='h-full w-full' />
       </div>
 
       <div id="about"></div>
