@@ -11,18 +11,21 @@ function DropdownMenu({
 }) {
   // Close the dropdown menu
   const closeDropdown: ReactEventHandler = (event) => {
+    // Gestion du menu déroulant
     const dropdown = document.querySelector('.dropdown-menu-content');
-    dropdown?.classList.remove('translate-x-0');
-    dropdown?.classList.remove('opacity-100');
-    dropdown?.classList.remove('w-screen');
-    dropdown?.classList.remove('h-screen');
-    dropdown?.classList.add('opacity-0');
-    dropdown?.classList.add('w-0');
-    dropdown?.classList.add('h-0');
-
+    // Suppression de multiples classes
+    dropdown?.classList.remove(
+      'translate-x-0',
+      'opacity-100',
+      'w-screen',
+      'h-screen',
+    );
+    // Ajout de multiples classes
+    dropdown?.classList.add('opacity-0', 'w-0', 'h-0');
+    
+    // Gestion du bouton de menu
     const dropdownButton = document.querySelector('.dropdown-menu-button');
-    dropdownButton?.classList.remove('text-blue-400');
-    dropdownButton?.classList.remove('rotate-90');
+    dropdownButton?.classList.remove('text-blue-400', 'rotate-90');
     // Appelle la fonction onToggle pour fermer le menu et remonter l'état au composant parent, le Header
     onToggle(false);
   };

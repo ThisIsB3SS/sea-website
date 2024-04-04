@@ -78,13 +78,28 @@ const config = {
           from: { color: "bg-blue-0" },
           to: { color: "bg-blue-800" },
         },
-        rotateYoyo: {
+        "rotateYoyo": {
           '0%, 100%': { transform: 'rotate(20deg)' },
           '50%': { transform: 'rotate(0deg)' },
         },
-        moveUpAndDown: {
+        "moveUpAndDown": {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-40px)' },
+        },
+        slideAndWave: {
+          '0%': { transform: 'translateX(-100%) translateY(0) rotate(0deg)' },
+          '25%': { transform: 'translateX(-50%) translateY(-20px) rotate(-10deg)' },
+          '50%': { transform: 'translateX(-25%) translateY(0) rotate(0deg)' },
+          '75%': { transform: 'translateX(-12.5%) translateY(-20px) rotate(10deg)' },
+          '100%': { transform: 'translateX(0%) translateY(0) rotate(0deg)' },
+        },
+        "float": {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        "flip": {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(-360deg)' },
         },
       },
       animation: {
@@ -93,6 +108,9 @@ const config = {
         "color": "color 0.2s ease-out",
         'rotate-yoyo': 'rotateYoyo 3s infinite ease',
         'move-up-and-down': 'moveUpAndDown 4s infinite ease-in-out',
+        'slideAndWave': 'slideAndWave 4s ease-in-out forwards',
+        'float': 'float 3s ease-in-out infinite',
+        'flip': 'flip 2s ease',
       },
       fontFamily: {
         pinkerston: ["'Pinkerston'", 'sans-serif'],

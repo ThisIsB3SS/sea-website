@@ -6,17 +6,13 @@ import { About } from '@/components/sections/About';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { CtaSection } from '@/components/ui/CtaSection';
 import Image from 'next/image';
-import  surf  from '../../public/assets/surf.png';
+import surf from '../../public/assets/surf.png';
 
 export default function Home() {
   const bg1 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
   return (
     <main className="w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
-      <div className="min-h-screen">
-        <Hero />
-        <CtaSection />
-        <Image src={surf} alt={"surfing"} className='h-full w-full' />
-      </div>
+      <Hero />
 
       <div id="about"></div>
       <div
