@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Image from 'next/image';
 import surf from '../../../public/assets/surf.svg';
 import { useEffect, useState } from 'react';
@@ -23,9 +23,13 @@ export function SurfGirl() {
     return () => clearInterval(interval); // Nettoyer l'intervalle lors du démontage du composant
   }, []);
   return (
-    <div className="image-wrapper animate-slideAndWave">
+    <div className="image-wrapper animate-slideAndWave ">
       <div className="image-inner-wrapper animate-float">
-        <Image src={surf} alt={'surfing icon'} className={`surfeuse ${isFlipping ? 'animate-flip' : ''}`} />
+        <Image
+          src={surf}
+          alt={'surfing icon'}
+          className={`surfeuse ${isFlipping ? 'animate-flip' : ''}`}
+        />
       </div>
     </div>
   );
