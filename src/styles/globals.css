@@ -91,9 +91,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.parent_hover:hover span {
-  color: #1e40af; /* Ceci est la couleur Tailwind pour blue-800 */
-}
 
 html,
 a {
