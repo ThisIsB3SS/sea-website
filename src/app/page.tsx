@@ -22,6 +22,7 @@ export default function Home() {
         }}
       >
         <About />
+        <div id="services"></div>
         <Services/>
         <CarouselBanner />
       </div>
