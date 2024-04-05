@@ -29,19 +29,19 @@ package manager of your choice :
 - [NPM](https://www.npmjs.com/)
 
 ```sh
-cd sea-website2
+cd sea-website
 npm i
 
 ```
 - [YARN](https://yarnpkg.com/)
 ```sh
-cd sea-website2
+cd sea-website
 yarn
 
 ```
 - [PNPM](https://pnpm.io/) 
 ```sh
-cd sea-website2
+cd sea-website
 pnpm 
 
 ```
@@ -52,19 +52,19 @@ Open http://localhost:3000 with your browser to see the result after typing this
 - [NPM](https://www.npmjs.com/)
 
 ```sh
-cd sea-website2
+cd sea-website
 npm run dev
 
 ```
 - [YARN](https://yarnpkg.com/)
 ```sh
-cd sea-website2
+cd sea-website
 yarn run dev
 
 ```
 - [PNPM](https://pnpm.io/) 
 ```sh
-cd sea-website2
+cd sea-website
 pnpm run dev
 
 ```
