@@ -85,9 +85,8 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/Montserrat/Montserrat.woff2') format('woff2'),
-    url('/fonts/Montserrat/Montserrat.woff') format('woff'),
-    url('/fonts/Montserrat/Montserrat.ttf') format('truetype');
+  src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
   font-weight: normal;
   font-style: normal;
 }

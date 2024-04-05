@@ -7,7 +7,7 @@ export function CtaSection() {
         href="contact"
         className="flex justify-center items-center text-center"
       >
-        <div className="parent_hover group flex flex-col sm:flex-row p-6 gap-4 justify-around items-center  min-h-full border border-gray-50 shadow-md rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-700">
+        <div className="group flex flex-col sm:flex-row p-6 gap-4 justify-around items-center  min-h-full border border-gray-50 shadow-md rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-700">
           <h2 className="font-montserrat text-xl xl:text-2xl italic text-slate-800  ">
             Création, Développement,
             <br /> Stratégie Web & Mobile{' '}
