@@ -5,16 +5,16 @@
 
 
 
-SEA Webstudio is a digital agency for creation, development and digital strategy. 🚀
-Go check our website ! 🌐 seawebstudio.com
-Let's have a talk !👋🏻 contact@webstudio.com
+SEA Webstudio is a digital agency for creation, development and digital strategy. 🚀    
+Go check our [website](seawebstudio.com) ! 🌐     
+Let's have a talk !👋🏻 contact@webstudio.com  
 
 
 
 ## Features
 
 - All the files and source code is here !
-- Built with 💖 with NextJS, Typescript & TailwindCSS !
+- Built with 💖 with [NextJS](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/) & [TailwindCSS](https://tailwindcss.com/) !
 
 
 
@@ -69,7 +69,8 @@ pnpm run dev
 
 ```
 ## License ©️
-Copyright 2024 SEA Webstudio
 All rights reserved,
+Copyright 2024 SEA Webstudio
+
 
 
