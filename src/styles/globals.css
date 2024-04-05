@@ -96,3 +96,21 @@ a {
   @apply antialiased;
   scroll-behavior: smooth;
 }
+.button {
+  border: 1px solid white; /* border et border-white */
+  border-radius: 3rem; /* rounded-2xl */
+  padding: 1rem; /* px-4 (Ceci applique un padding horizontal, ajustez selon le besoin) */
+  width: fit; /* w-40 */
+  height: 3.5rem; /* h-12 */
+  color: #3b82f6; /* text-blue-500 */
+  background-color: rgba(255, 255, 255, 0.5); /* bg-white bg-opacity-50 */
+  font-weight: bold; /* font-bold */
+  transition: all 0.3s ease-in-out;
+  text-wrap: "no-wrap"; /* transition-all duration-300 ease-in-out */
+}
+
+.button:hover {
+  background-color: transparent; /* hover:bg-transparent */
+  border-color: white; /* hover:border-white */
+  color: white; /* hover:text-white */
+}

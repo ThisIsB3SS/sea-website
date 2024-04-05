@@ -1,6 +1,15 @@
 import projects from '../../../public/data/projects.json';
 import Image from 'next/image';
 import '../../styles/custom.css';
+
+type Project = {
+  image: string;
+  title: string;
+  type: string;
+  description: string;
+  tags: string[];
+  link: string;
+};
 export function Projects() {
   return (
     <div className="projects_section w-full h-fit flex flex-col items-start justify-start px-6 md:px-20 mt-10 md:mt-20">
@@ -15,14 +24,8 @@ export function Projects() {
       <div className="Projects_section_item_container flex flex-col items-start justify-end w-full overflow-visible mt-6">
         {projects.map(
           (
-            project: {
-              image: string;
-              title: string;
-              description: string;
-              tags: string[];
-              link: string;
-            },
-            index: number,
+            project,
+            index
           ) => (
             <div
               key={index}
@@ -41,11 +44,11 @@ export function Projects() {
                     <h4 className="Projects_section_item_title text-6xl md:text-7xl lg:text-9xl w-full h-full font-pinkerston group-hover:translate-y-[-15px] group-hover:text-white transition-all ease duration-200">
                       {project.title}
                     </h4>
-                    <p className="Projects_section_item_description text-xl md:text-3xl mt-2 mb-2 font-semibold">
-                      {project.description}
+                    <p className="Projects_section_item_type text-xl md:text-3xl mt-2 mb-2 font-semibold">
+                      {project.type}
                     </p>
                     <div className="Projects_section_item_tags italic flex flex-wrap gap-1 md:gap-2 ">
-                      {project.tags.map((tag: string, index: number) => (
+                      {project.tags.map((tag,index) => (
                         <span
                           key={index}
                           className="Projects_section_item_tag font-lg text-white border border-transparent shadow-xl bg-transparent  w-fit rounded-full p-2 px-4"

@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import surf from '../../../public/assets/surf.svg';
+import surf from '/public/assets/surf.svg';
 import { useEffect, useState } from 'react';
 
 export function SurfGirl() {

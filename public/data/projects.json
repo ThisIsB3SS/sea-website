@@ -1,7 +1,8 @@
 [
     {
         "title": "Project 1",
-        "description": "Artiste Conteuse",
+        "type": "Artiste Conteuse"
+        ,"description": "This is a project description",
         "tags": [
             "Wordpress",
             "Website",
@@ -13,7 +14,8 @@
     },
     {
         "title": "Project 2",
-        "description": "Artiste chanteuse",
+        "type": "Artiste chanteuse",
+        "description": "This is a project description",
         "tags": [
             "Wordpress",
             "Website",
@@ -25,7 +27,8 @@
     },
     {
         "title": "Project 3",
-        "description": "E-commerce",
+        "type": "E-commerce",
+        "description": "This is a project description",
         "tags": [
             "Wordpress",
             "Website",
@@ -37,7 +40,8 @@
     },
     {
         "title": "Project 4",
-        "description": "This is a project",
+        "type": "This is a project",
+        "description": "This is a project description",
         "tags": [
             "Wordpress",
             "Website",

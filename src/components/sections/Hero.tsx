@@ -1,10 +1,8 @@
 'use client';
-import { color } from 'framer-motion';
-import { CarouselBanner } from './CarouselBanner';
 import { CtaSection } from '../ui/CtaSection';
 import { SurfGirl } from '../ui/SurfGirl';
-import { useState, useEffect, use } from 'react';
-
+import wave from '/public/assets/wave.svg';
+import Image from 'next/image';
 export function Hero() {
   return (
     <div
@@ -19,6 +17,9 @@ export function Hero() {
       </h1>
       <CtaSection />
       <SurfGirl />
+      <div className="absolute bottom-0 w-full bg-cover">
+        <Image src={wave} alt="wave" />
+        </div>
     </div>
   );
 }

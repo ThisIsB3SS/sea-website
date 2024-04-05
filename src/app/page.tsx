@@ -4,9 +4,7 @@ import { Projects } from '@/components/sections/Projects';
 import { ModeToggle } from '@/components/mode-toggle';
 import { About } from '@/components/sections/About';
 import { Testimonials } from '@/components/sections/Testimonials';
-import { CtaSection } from '@/components/ui/CtaSection';
-import Image from 'next/image';
-import surf from '../../public/assets/surf.png';
+import { Services } from '@/components/sections/Services';
 
 export default function Home() {
   const bg1 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
@@ -24,6 +22,7 @@ export default function Home() {
         }}
       >
         <About />
+        <Services/>
         <CarouselBanner />
       </div>
       <div id="projects"></div>

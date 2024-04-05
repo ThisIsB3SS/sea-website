@@ -3,9 +3,7 @@ import testimonials from '../../../public/data/testimonials.json';
 import { QuoteIconStart, QuoteIconEnd } from '../icons/QuoteIcon';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Button } from '../ui/button';
 import { ArrowRightIcon, ArrowLeftIcon } from '@radix-ui/react-icons';
-import { Arrow } from '@radix-ui/react-dropdown-menu';
 
 export function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -74,18 +72,12 @@ export function Testimonials() {
           </div>
         </div>
         <div className="button_wrapper flex flex-row justify-center mt-10 md:mt-0 md:float-right md:relative">
-          <Button
-            className="prev_btn bg-white mr-2 rounded-full text-black hover:bg-transparent hover:border hover:border-white hover:text-white "
-            onClick={handlePrev}
-          >
+          <button className="button prev_btn mr-2  " onClick={handlePrev}>
             <ArrowLeftIcon />
-          </Button>
-          <Button
-            className="next_btn bg-white rounded-full  text-black hover:bg-transparent hover:border hover:border-white hover:text-white "
-            onClick={handleNext}
-          >
+          </button>
+          <button className="button next_btn " onClick={handleNext}>
             <ArrowRightIcon />
-          </Button>
+          </button>
         </div>
       </div>
     </div>

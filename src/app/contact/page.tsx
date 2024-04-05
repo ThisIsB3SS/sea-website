@@ -204,13 +204,19 @@ export default function Contact(): React.JSX.Element {
                   </ul>
                 </div>
               )}
-              <div className="btn_container flex justify-center items-center mt-10">
+              <div className="btn_container group flex justify-center items-center mt-10">
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="p-1 sm:p-4 border rounded-2xl sm:rounded-full w-fit font-semibold text-xl sm:text-2xl hover:bg-blue-500 hover:text-white active:bg-blue-800 text-white transition-colors duration-300 ease-in-out"
+                  className="button  text-2xl flex justify-center items-center text-nowrap "
                 >
-                  {isSubmitting ? 'En cours d`envoi...' : ' Envoyer 🚀 '}
+                  {isSubmitting ? (
+                    'En cours d`envoi...'
+                  ) : (
+                    <div className="flex justify-center items-center text-nowrap gap-1">
+                      Envoyer
+                    </div>
+                  )}
                 </button>
               </div>
             </form>
