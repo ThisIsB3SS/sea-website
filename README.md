@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SEA Webstudio
+## Official repo of seawebstudio.com 
 
-## Getting Started
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+SEA Webstudio is a digital agency for creation, development and digital strategy. 🚀
+Go check our website ! 🌐 seawebstudio.com
+Let's have a talk !👋🏻 contact@webstudio.com
+
+
+
+## Features
+
+- All the files and source code is here !
+- Built with 💖 with NextJS, Typescript & TailwindCSS !
+
+
+
+
+## Installation 💻
+
+This project requires [Node.js](https://nodejs.org/) v10+ to run.
+
+Install the dependencies and devDependencies with the
+package manager of your choice :
+
+- [NPM](https://www.npmjs.com/)
+
+```sh
+cd sea-website2
+npm i
+
+```
+- [YARN](https://yarnpkg.com/)
+```sh
+cd sea-website2
+yarn
+
+```
+- [PNPM](https://pnpm.io/) 
+```sh
+cd sea-website2
+pnpm 
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run 🚀
+Open http://localhost:3000 with your browser to see the result after typing this : 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [NPM](https://www.npmjs.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+cd sea-website2
+npm run dev
 
-## Learn More
+```
+- [YARN](https://yarnpkg.com/)
+```sh
+cd sea-website2
+yarn run dev
 
-To learn more about Next.js, take a look at the following resources:
+```
+- [PNPM](https://pnpm.io/) 
+```sh
+cd sea-website2
+pnpm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+## License ©️
+Copyright 2024 SEA Webstudio
+All rights reserved,
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
