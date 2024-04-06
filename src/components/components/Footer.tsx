@@ -14,7 +14,7 @@ export function Footer() {
 
       {/* 2ème colonne */}
       <div className="CtaFooter  flex flex-col justify-center items-center gap-4 p-2 order-1 md:order-2">
-        <div className="CtaFooter_wrapper w-auto text-3xl sm:text-4xl font-montserrat rounded-lg transition-colors duration-200 ease-out bg-transparent hover:bg-blue-800">
+        <div className="CtaFooter_wrapper w-auto text-nowrap text-3xl sm:text-4xl font-montserrat rounded-lg transition-colors duration-200 ease-out bg-transparent hover:bg-blue-800">
           <a href="/contact">
             <h2>Contactez-nous</h2>
           </a>

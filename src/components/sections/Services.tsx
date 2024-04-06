@@ -29,7 +29,7 @@ export function Services() {
       </div>
       {/* Affichage des services en grid */}
       <div className="services-grid-container w-full sm:px-8 md:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8 ">
           {typeServices.map((service, index) => {
             return (
               <div
