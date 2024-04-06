@@ -1,20 +1,20 @@
 [
     {
-        "title": "Project 1",
-        "type": "Artiste Conteuse"
-        ,"description": "This is a project description",
+        "title": "Louise Desmons",
+        "type": "Artiste Conteuse",
+        "description": "This is a project description",
         "tags": [
             "Wordpress",
-            "Website",
             "Design",
-            "Developpement"
+            "Developpement",
+            "Site Vitrine"
         ],
-        "link": "http://www.google.com",
-        "image": "/assets/projects_images/Cover.jpg "
+        "link": "http://louisedesmons.com",
+        "image": "/assets/projects_images/louise-desmons.webp"
     },
     {
-        "title": "Project 2",
-        "type": "Artiste chanteuse",
+        "title": "Gabrielle Alya",
+        "type": "Artiste Chanteuse",
         "description": "This is a project description",
         "tags": [
             "Wordpress",
@@ -23,24 +23,24 @@
             "Developpement"
         ],
         "link": "http://www.gabriellealya.com",
-        "image": "/assets/projects_images/Cover.jpg "
+        "image": "/assets/projects_images/gabrielle-alya.webp "
     },
     {
-        "title": "Project 3",
+        "title": "Sobrondy",
         "type": "E-commerce",
         "description": "This is a project description",
         "tags": [
-            "Wordpress",
-            "Website",
+            "Shopify",
+            "Luxe",
             "Design",
-            "Developpement"
+            "E-commerce"
         ],
-        "link": "http://www.google.com",
-        "image": "/assets/projects_images/Cover.jpg "
+        "link": "http://www.sobrondy.com",
+        "image": "/assets/projects_images/sobrondy.webp "
     },
     {
-        "title": "Project 4",
-        "type": "This is a project",
+        "title": "Delphine Dumas",
+        "type": "Artiste Conteuse",
         "description": "This is a project description",
         "tags": [
             "Wordpress",
@@ -48,7 +48,7 @@
             "Design",
             "Developpement"
         ],
-        "link": "http://www.google.com",
-        "image": "/assets/projects_images/Cover.jpg "
+        "link": "https://www.conteuse-delphinedumas.fr/",
+        "image": "/assets/projects_images/delphine-dumas.webp"
     }
 ]
