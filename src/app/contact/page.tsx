@@ -8,7 +8,12 @@ type Inputs = {
   name: string;
   phone: string;
 };
-
+const calcScreenWidth = () => {
+  let size: number;
+  size = window.innerWidth / 2;
+  console.log(size);
+  return size;
+};
 export default function Contact(): React.JSX.Element {
   const {
     formState: { errors, isSubmitSuccessful, isSubmitting },
@@ -40,9 +45,9 @@ export default function Contact(): React.JSX.Element {
   );
 
   return (
-    <main className="w-full min-h-screen flex flex-col  items-center justify-center p-12 gap-4 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
-      <div className="contact_form_title flex flex-col gap-6 lg:gap-0 lg:flex-row items-center justify-center">
-        <h1 className="mt-32 text-2xl sm:text-4xl lg:text-6xl font-montserrat font-bold text-white text-wrap">
+    <main className=" flex flex-col w-full h-screen items-center justify-start p-12 gap-16 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
+      <div className="contact_form_title flex flex-col gap-6 p-2 lg:gap-0 xl:flex-row items-center justify-center">
+        <h1 className="mt-32 text-pretty text-3xl lg:text-6xl font-montserrat font-bold text-white">
           {isSubmitSuccessful
             ? 'Merci de nous avoir contacté !'
             : 'Contactez-nous'}
@@ -58,8 +63,8 @@ export default function Contact(): React.JSX.Element {
           height={200}
           className={
             isSubmitSuccessful
-              ? 'animate-move-up-and-down h-20 w-20 md:h-40 md:w-40 lg:h-60 lg:w-60'
-              : 'animate-rotate-yoyo'
+              ? 'animate-move-up-and-down h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  mt-20'
+              : 'animate-rotate-yoyo h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  lg:mt-20'
           }
         />
         {/* youtube video hidden, "yeah !" */}
@@ -67,8 +72,6 @@ export default function Contact(): React.JSX.Element {
           <iframe
             className="hidden"
             aria-hidden="true"
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/idA7RsiOpqA?si=2ZkPYk_nuP9rvp9D&amp;controls=0&autoplay=1"
             title="YouTube video player"
             frameBorder="0"
@@ -82,18 +85,18 @@ export default function Contact(): React.JSX.Element {
         <iframe
           loading="lazy"
           src="https://lottie.host/embed/74241b77-4958-483d-b2dc-668f5aa16277/t44RX5krsj.json"
-          height={400}
-          width={400}
+          height={calcScreenWidth() > 500 ? 500 : calcScreenWidth()}
+          width={calcScreenWidth() > 500 ? 500 : calcScreenWidth()}
         />
       ) : null}{' '}
-      <div className="flex flex-col w-3/4 gap-2 mt-10">
+      <div className="flex flex-col w-full sm:w-3/4 gap-2 mt-10">
         {isSubmitSuccessful ? null : (
           <div className="flex flex-col sm:flex-row justify-between w-full ">
-            <h2 className="text-2xl sm:text-4xl text-blue-800  font-semibold  ">
+            <h2 className="text-2xl md:text-3xl text-blue-800  font-semibold  ">
               Un Nouveau Projet ?
             </h2>
 
-            <h3 className="text-2xl sm:text-3xl font-pinkerston font-semibold text-white">
+            <h3 className="text-2xl md:text-3xl font-pinkerston font-semibold text-white">
               Parlons en <span className="font-montserrat">!</span>
             </h3>
           </div>
@@ -106,7 +109,7 @@ export default function Contact(): React.JSX.Element {
         >
           {isSubmitSuccessful ? (
             <div className="flex flex-col items-center gap-10">
-              <h2 className="text-lg text-nowrap sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
+              <h2 className="text-lg text-pretty sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
                 Message bien reçu, nous vous répondrons bientôt !
               </h2>
               <a
@@ -185,10 +188,10 @@ export default function Contact(): React.JSX.Element {
                   id="message"
                   rows={10}
                   aria-placeholder="Message"
-                  placeholder="Incluez ici toute information nécessaire à votre projet."
+                  placeholder="Indiquez ici toute information nécessaire à votre projet."
                   required
                   aria-required="true"
-                  className=" h-full w-full p-4 rounded-lg bg-white bg-opacity-50 border border-white placeholder-black placeholder-opacity-70"
+                  className=" h-full w-full p-4 rounded-lg bg-white bg-opacity-50 border border-white placeholder-black placeholder-opacity-70 text-black"
                 />
               </div>
               {errors.root && (
@@ -208,12 +211,13 @@ export default function Contact(): React.JSX.Element {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="button  text-2xl flex justify-center items-center text-nowrap "
+                  className="button group  text-2xl flex justify-center items-center text-nowrap 
+                  "
                 >
                   {isSubmitting ? (
                     'En cours d`envoi...'
                   ) : (
-                    <div className="flex justify-center items-center text-nowrap gap-1">
+                    <div className="flex justify-center items-center text-nowrap gap-1  text-blue-800 group-hover:text-white transition-all duration-300 ease-in-out">
                       Envoyer
                     </div>
                   )}
