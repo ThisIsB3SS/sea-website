@@ -8,9 +8,9 @@ import { Services } from '@/components/sections/Services';
 
 export default function Home() {
   const bg1 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
+  const bg2 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107.svg';
   return (
     <main className="w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
-      <Hero />
 
       <div id="about"></div>
       <div
@@ -21,14 +21,22 @@ export default function Home() {
           backgroundRepeat: 'no-repeat',
         }}
       >
+        <Hero />
         <About />
         <div id="services"></div>
-        <Services/>
+        <Services />
         <CarouselBanner />
       </div>
       <div id="projects"></div>
-      <div className="projects-testimonials-wrapper w-full min-h-screen m-0 flex flex-col justify-around ">
-        <Projects />
+      <Projects />
+      <div
+        className="projects-testimonials-wrapper z-0 w-full min-h-screen m-0 flex flex-col justify-around "
+        style={{
+          backgroundImage: `url(${bg2})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <Testimonials />
         <div className="spacer min-h-40 w-full"></div>
       </div>
