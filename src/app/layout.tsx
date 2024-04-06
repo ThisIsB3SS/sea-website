@@ -6,7 +6,6 @@ import '../styles/custom.css';
 import { Header } from '@/components/components/Header';
 import 'animate.css';
 import { Footer } from '@/components/components/Footer';
-import { FormspreeProvider } from '@formspree/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {

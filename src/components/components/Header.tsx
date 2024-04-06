@@ -22,7 +22,7 @@ export function Header() {
             className="max-h-40"
           />
         </a>
-        <button onClick={() => toggleMenu(!isMenuOpen)}>
+        <button onClick={() => toggleMenu(!isMenuOpen)} aria-label='bouton menu navigation'>
           <MenuBarIcon
             className={`dropdown-menu-button xs:w-12 sm:w-20 h-auto text-blue-800 transition-transform duration-300 ease-in-out ${
               isMenuOpen ? 'rotate-90 text-blue-400' : ''

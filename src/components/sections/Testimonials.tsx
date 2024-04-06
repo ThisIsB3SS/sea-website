@@ -33,7 +33,11 @@ export function Testimonials() {
             </span>
           </h3>
         </div>
-        <div className="Testimonials_carousel ">
+        <div
+          className="Testimonials_carousel "
+          id="Carousel-Témoignages"
+          aria-live="polite"
+        >
           <div className="Testimonials_carousel_item flex flex-col items-center gap-6">
             <p className="message text-xl italic w-5/6 text-pretty">
               <QuoteIconStart /> {element.message} <QuoteIconEnd />
@@ -55,6 +59,7 @@ export function Testimonials() {
                 <a
                   href={element.link}
                   className="lien mt-2 text-lg text-center p-2  max-w-fit underline underline-offset-2 transition-all duration-300 ease-in-out   hover:text-white"
+                  aria-label={`Lien vers le site de ${element.auteur}`}
                 >
                   Son site
                 </a>
@@ -63,6 +68,7 @@ export function Testimonials() {
                   <a
                     href={element.album}
                     className="lien mt-2 text-lg text-center p-2  max-w-fit underline underline-offset-2 transition-all duration-300 ease-in-out   hover:text-white"
+                    aria-label="Lien vers l'album de Gabrielle Alya"
                   >
                     Son album
                   </a>
@@ -72,10 +78,20 @@ export function Testimonials() {
           </div>
         </div>
         <div className="button_wrapper flex flex-row justify-center mt-10 md:mt-0 md:float-right md:relative">
-          <button className="button prev_btn mr-2  " onClick={handlePrev}>
+          <button
+            className="button prev_btn mr-2  "
+            onClick={handlePrev}
+            aria-controls="Carousel-Témoignages"
+            aria-label="Bouton Précédent du caroussel"
+          >
             <ArrowLeftIcon />
           </button>
-          <button className="button next_btn " onClick={handleNext}>
+          <button
+            className="button next_btn "
+            onClick={handleNext}
+            aria-controls="Carousel-Témoignages"
+            aria-label="Bouton Suivant du caroussel"
+          >
             <ArrowRightIcon />
           </button>
         </div>

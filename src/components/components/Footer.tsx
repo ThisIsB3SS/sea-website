@@ -21,7 +21,11 @@ export function Footer() {
         </div>
         <div className="Socials flex items-center justify-between gap-2">
           {/* mail */}
-          <a href="mailto:contact@seawebstudio.com" target="_blank">
+          <a
+            href="mailto:contact@seawebstudio.com"
+            target="_blank"
+            aria-label="Envoyer un mail à SEA Webstudio"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -38,6 +42,7 @@ export function Footer() {
           <a
             href="https://www.linkedin.com/in/sebastien-escudero/"
             target="_blank"
+            aria-label="Suivez-nous sur LinkedIn"
           >
             <Image
               src={'/assets/linkedIn.svg'}
@@ -47,7 +52,10 @@ export function Footer() {
             />
           </a>
           {/* Gif Parrot */}
-          <a href="/contact">
+          <a
+            href="/contact"
+            aria-label="Contactez-nous avec le formulaire de contact"
+          >
             <Image
               unoptimized={true}
               src="/assets/parrot-party.gif"
@@ -57,7 +65,11 @@ export function Footer() {
             />
           </a>
           {/* Github */}
-          <a href="https://github.com/beseb" target="_blank">
+          <a
+            href="https://github.com/beseb"
+            target="_blank"
+            aria-label="Follow us on Github !"
+          >
             <Image
               src="/assets/logos_carousel/github.svg"
               alt="follow us on Github"
@@ -66,7 +78,11 @@ export function Footer() {
             ></Image>
           </a>
           {/* Codeur */}
-          <a href="https://www.codeur.com/-sebastien_sq" target="_blank">
+          <a
+            href="https://www.codeur.com/-sebastien_sq"
+            target="_blank"
+            aria-label="Suivez-nous sur Codeur.com !"
+          >
             <Image
               src="/assets/CodeurLogo.svg"
               alt="Follow us on Codeur.com"
@@ -77,7 +93,10 @@ export function Footer() {
         </div>
         {/* Badge Codeur */}
         <div>
-          <Markdown className="h-auto w-40">
+          <Markdown
+            className="h-auto w-40"
+            aria-label="Badge affichant avis clients sur Codeur.com, cliquez dessus pour nous suivre sur Codeur.com !"
+          >
             [![sebastien_sq —
             Codeur.com](https://api.codeur.com/widgets/badge.svg?k=N-bF32UFYPm7pCBg)](https://www.codeur.com/-sebastien_sq)
           </Markdown>

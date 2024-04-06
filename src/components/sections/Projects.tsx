@@ -27,13 +27,17 @@ export function Projects() {
             key={index}
             className="Projects_section_item group flex flex-col  lg:block border  border-t-1 border-b-0 last:border-b-1  border-x-0 border-opacity-30 w-full py-4 lg:opacity-50 hover:opacity-100 transition-all duration-300 ease-in-out "
           >
-            <a id="Project_item_link h-full" href={project.link}>
+            <a
+              id="Project_item_link h-full"
+              href={project.link}
+              aria-label={`Lien vers le projet ${project.title}`}
+            >
               <div className="Projects_section_item_content w-full flex flex-col items-center justify-center  xl:flex-row  ">
                 <div className="Projects_section_item_content_image order-1 w-3/4">
                   <Image
                     className=" w-full rounded-xl lg:opacity-50 group-hover:opacity-100 group-hover:scale-105  transition-all duration-300 ease-in-out"
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} image du projet`}
                     width={500}
                     height={300}
                   />
@@ -42,9 +46,9 @@ export function Projects() {
                   <h4 className="Projects_section_item_title text-wrap mt-6 text-6xl md:text-7xl  lg:text-9xl w-full h-full font-pinkerston group-hover:translate-y-[-15px] group-hover:text-white transition-all ease duration-200">
                     {project.title}
                   </h4>
-                  <p className="Projects_section_item_type text-xl md:text-3xl mt-2 mb-2 font-semibold">
+                  <h5 className="Projects_section_item_type text-xl md:text-3xl mt-2 mb-2 font-semibold">
                     {project.type}
-                  </p>
+                  </h5>
                   <div className="Projects_section_item_tags italic flex flex-wrap gap-1 md:gap-2 ">
                     {project.tags.map((tag, index) => (
                       <span

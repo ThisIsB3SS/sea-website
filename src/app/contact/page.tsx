@@ -115,6 +115,7 @@ export default function Contact(): React.JSX.Element {
               <a
                 href="/"
                 className="underline text-xl text-center hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
+                aria-label="Bouton de retour à l'accueil du site"
               >
                 Retour à l'accueil
               </a>
@@ -213,6 +214,7 @@ export default function Contact(): React.JSX.Element {
                   disabled={isSubmitting}
                   className="button group  text-2xl flex justify-center items-center text-nowrap 
                   "
+                  aria-label="Bouton d`envoi du formulaire de contact"
                 >
                   {isSubmitting ? (
                     'En cours d`envoi...'
