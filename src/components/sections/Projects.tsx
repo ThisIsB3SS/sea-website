@@ -15,7 +15,7 @@ export function Projects() {
     <div className="projects_section w-full h-fit flex flex-col items-start justify-start px-6 md:px-20 mt-10 md:mt-20">
       <div className="Projects_section_content_1  w-full flex flex-col items-start justify-center">
         <h2 className="Projects_section_title text-2xl md:text-3xl  font-montserrat font-thin italic text-blue-800">
-          Ce que nous faisons
+          Ce que nous crééons
         </h2>
         <h3 className=" Projects_section_slogan text-4xl sm:text-6xl md:text-7xl md:w-full text-white flex gap-4">
           Nos <span className="font-pinkerston">Projets</span>

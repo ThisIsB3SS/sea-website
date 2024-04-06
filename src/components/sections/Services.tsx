@@ -11,8 +11,6 @@ type Service = {
 export function Services() {
   // Typage du tableau json
   const typeServices: Service[] = services;
-  // Initialisation d'un tableau de keywords
-  const keyword: string[] = keywords;
   return (
     <div className="Services-section w-full flex flex-col justify-center items-start  px-6 md:px-20 my-10 md:my-20">
       <div className="Services_content_1  w-full">
@@ -40,15 +38,16 @@ export function Services() {
                   {service.title}
                 </h3>
                 <p className="text-xl text-justify text-pretty">
-                  {service.description.split(' ').map((word, index) =>
-                    keywords.includes(word.toLowerCase()) ? (
-                      <span key={index} className=" font-bold shadow-2xl">
-                        {word}{' '}
-                      </span>
-                    ) : (
-                      <span key={index}>{word} </span>
-                    ),
-                  )}
+                {service.description.split(' ').map((word, index) => {
+                const cleanedWord = word.toLowerCase().replace(/[\., ]+$/, '');
+                return keywords.includes(cleanedWord) ? (
+                  <span key={index} className="font-bold shadow-2xl">
+                    {word}{' '}
+                  </span>
+                ) : (
+                  <span key={index}>{word} </span>
+                );
+              })}
                 </p>
               </div>
             );

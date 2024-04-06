@@ -1,5 +1,6 @@
 'use client';
 import testimonials from '../../../public/data/testimonials.json';
+import keywords from '../../../public/data/keywords.json';
 import { QuoteIconStart, QuoteIconEnd } from '../icons/QuoteIcon';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -24,7 +25,7 @@ export function Testimonials() {
     <div className="Testimonials_section w-full flex flex-col justify-center items-center px-6 md:px-20 mt-10 md:mt-20">
       <div className="Testimonials_content_1  w-full">
         <h2 className="About_title text-2xl md:text-3xl  font-montserrat font-thin italic text-blue-800">
-          Ils parlent de nous
+          Ce qu'ils disent de nous
         </h2>
         <div className="Testimonials_slogan ">
           <h3 className="text-4xl sm:text-6xl md:text-7xl md:w-full text-white flex flex-col gap-4">
@@ -40,7 +41,18 @@ export function Testimonials() {
         >
           <div className="Testimonials_carousel_item flex flex-col items-center gap-6">
             <p className="message text-xl italic w-5/6 text-pretty">
-              <QuoteIconStart /> {element.message} <QuoteIconEnd />
+              <QuoteIconStart />{' '}
+              {element.message.split(' ').map((word, index) => {
+                const cleanedWord = word.toLowerCase().replace(/[\., ]+$/, '');
+                return keywords.includes(cleanedWord) ? (
+                  <span key={index} className="font-bold shadow-2xl">
+                    {word}{' '}
+                  </span>
+                ) : (
+                  <span key={index}>{word} </span>
+                );
+              })}
+              <QuoteIconEnd />
             </p>
             <div className="Testimonials_carousel_item_author flex flex-row gap-6 justify-center items-center">
               <Image
@@ -56,22 +68,26 @@ export function Testimonials() {
                 <h5 className="poste  text-xl font-semibold">
                   {element.poste}
                 </h5>
-                <a
-                  href={element.link}
-                  className="lien mt-2 text-lg text-center p-2  max-w-fit underline underline-offset-2 transition-all duration-300 ease-in-out   hover:text-white"
-                  aria-label={`Lien vers le site de ${element.auteur}`}
-                >
-                  Son site
-                </a>
+                <button className="button ">
+                  <a
+                    href={element.link}
+                    className="lien mt-2 text-lg  p-2  max-w-fit  transition-all duration-300 ease-in-out  text-blue-800 hover:text-white hover:scale-110"
+                    aria-label={`Lien vers le site de ${element.auteur}`}
+                  >
+                    Son site
+                  </a>
+                </button>
                 {/* Uniquement pour Gabrielle Alya */}
                 {element.album ? (
-                  <a
-                    href={element.album}
-                    className="lien mt-2 text-lg text-center p-2  max-w-fit underline underline-offset-2 transition-all duration-300 ease-in-out   hover:text-white"
-                    aria-label="Lien vers l'album de Gabrielle Alya"
-                  >
-                    Son album
-                  </a>
+                  <button className="button">
+                    <a
+                      href={element.album}
+                      className="lien mt-2 text-lg  p-2  max-w-fit  transition-all duration-300 ease-in-out   text-blue-600 hover:text-white hover:scale-110"
+                      aria-label="Lien vers l'album de Gabrielle Alya"
+                    >
+                      Son album
+                    </a>
+                  </button>
                 ) : null}
               </div>
             </div>
