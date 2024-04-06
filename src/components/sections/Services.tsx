@@ -1,4 +1,6 @@
 import services from '../../../public/data/services.json';
+import keywords from '../../../public/data/keywords.json';
+
 // Définition du type de données
 type Service = {
   title: string;
@@ -7,8 +9,10 @@ type Service = {
 };
 
 export function Services() {
-  // typage du tableau json
+  // Typage du tableau json
   const typeServices: Service[] = services;
+  // Initialisation d'un tableau de keywords
+  const keyword: string[] = keywords;
   return (
     <div className="Services-section w-full flex flex-col justify-center items-start  px-6 md:px-20 my-10 md:my-20">
       <div className="Services_content_1  w-full">
@@ -24,20 +28,32 @@ export function Services() {
         </div>
       </div>
       {/* Affichage des services en grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
-        {typeServices.map((service, index) => {
-          return (
-            <div
-              key={index}
-              className="group flex flex-col items-center text-center p-4 rounded-3xl backdrop-blur-3xl bg-white bg-opacity-20 border border-white hover:shadow-lg hover:bg-opacity-30 transition-all duration-300 ease-in-out"
-            >
-              <h3 className="text-2xl font-semibold mb-4 text-blue-700 group-hover:text-blue-800 transition-all duration-300">
-                {service.title}
-              </h3>
-              <p className="text-xl">{service.description}</p>
-            </div>
-          );
-        })}
+      <div className="services-grid-container w-full px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 ">
+          {typeServices.map((service, index) => {
+            return (
+              <div
+                key={index}
+                className="group flex flex-col items-center text-center p-4 rounded-3xl backdrop-blur-3xl bg-white bg-opacity-20 border border-white hover:shadow-lg hover:bg-opacity-30 transition-all duration-300 ease-in-out"
+              >
+                <h3 className="text-2xl font-semibold mb-4 text-blue-700 group-hover:text-blue-800 transition-all duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-xl text-justify text-pretty">
+                  {service.description.split(' ').map((word, index) =>
+                    keywords.includes(word.toLowerCase()) ? (
+                      <span key={index} className=" font-bold shadow-2xl">
+                        {word}{' '}
+                      </span>
+                    ) : (
+                      <span key={index}>{word} </span>
+                    ),
+                  )}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

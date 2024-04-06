@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import aboutImage from '/public/assets/about-image.svg';
 export function About() {
   return (
     <div className="About_section w-full flex flex-col justify-center items-center px-6 md:px-20 mt-10 md:mt-20">
@@ -15,31 +17,34 @@ export function About() {
           </h3>
         </div>
       </div>
-      <div className="About_content_2 w-full flex flex-col items-center justify-center text-justify ml-0 md:pl-60 gap-6 mt-4">
-        <p className="text-xl">
-          Dans l'univers digital actuel, l'excellence ne s'improvise pas. Elle
-          résulte d'une parfaite harmonie entre innovation, design intuitif et
-          technologie avancée. <br />{' '}
-          <span className="font-montserrat font-bold">SEA Webstudio</span>{' '}
-          incarne cette synergie en offrant des services intégrés de conception,
-          développement et stratégie web. <br />{' '}
-        </p>
-        <span className="font-montserrat text-3xl text-white">
-          {' '}
-          Notre
-          <span className="font-pinkerston text-4xl text-white">
+      <div className="About_content_2 w-full flex flex-col xl:flex-row items-center justify-center text-justify  lg:pl-40 lg:gap-12 xl:gap-40 mt-12">
+        <Image src={aboutImage} alt="about" className="bg-transparent w-1/3 lg:w-1/4 xl:w-1/6 order-1 " />
+        <div className="about_text flex flex-col items-center justify-center gap-4 order-2 xl:w-1/2">
+          <span className="font-montserrat text-3xl text-white">
             {' '}
-            Mission
-          </span>{' '}
-        </span>
-
-        <p className="text-xl">
-          Accélérer votre croissance en ligne en créant des solutions sur-mesure
-          qui captivent votre audience et dynamisent votre activité.
-        </p>
-        <button className="button ">
-          <a href="/contact">Nous contacter</a>
-        </button>
+            Notre
+            <span className="font-pinkerston text-4xl text-white">
+              {' '}
+              Mission
+            </span>{' '}
+          </span>
+          <p className="text-2xl text-pretty ">
+            Dans l'univers digital actuel, l'excellence ne s'improvise pas. Elle
+            résulte d'une parfaite harmonie entre innovation, design intuitif et
+            technologie avancée. <br />{' '}
+            <span className="font-bold">SEA Webstudio</span>{' '}
+            incarne cette synergie en offrant des services intégrés de{' '}
+            <span className="font-bold">
+              conception, développement et stratégie web
+            </span>
+            . Accélérez votre croissance en ligne en créant des solutions
+            sur-mesure qui captivent votre audience et dynamisent votre
+            activité.
+          </p>
+          <button className="button ">
+            <a href="/contact">Nous contacter</a>
+          </button>
+        </div>
       </div>
     </div>
   );

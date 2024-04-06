@@ -100,7 +100,8 @@ const config = {
         "flip": {
           from: { transform: 'rotate(0deg)' },
           to: { transform: 'rotate(-360deg)' },
-        },
+        }
+     
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
