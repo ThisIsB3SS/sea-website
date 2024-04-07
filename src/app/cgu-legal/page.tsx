@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CGU(): React.JSX.Element {
   return (
-    <main className="CGU_section w-full flex bg-gradient-to-br from-blue-300 to-green-200  ">
+    <main className="CGU_section w-full flex bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500  ">
       <div
         className="termsOfService w-full px-10 sm:px-20 mx-auto  mb-20 mt-32 text-black flex flex-col  gap-10
       text-pretty"

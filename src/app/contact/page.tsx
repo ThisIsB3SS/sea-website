@@ -1,18 +1,73 @@
 'use client';
 import { useSubmit } from '@formspree/react';
 import { useForm } from 'react-hook-form';
+import { useEffect } from 'react';
 import Image from 'next/image';
+import Script from 'next/script';
+import { Fireworks } from 'fireworks-js';
 type Inputs = {
   email: string;
   message: string;
   name: string;
   phone: string;
 };
-const calcScreenWidth = () => {
-  let size: number;
-  size = window.innerWidth / 2;
-  console.log(size);
-  return size;
+
+const fireScript = () => {
+  const container = document.querySelector('.canvas') as
+    | Element
+    | HTMLCanvasElement;
+  if (container) {
+    const fireworks = new Fireworks(container, {
+      /* options */
+      opacity: 0.5,
+      acceleration: 1.05,
+      friction: 0.97,
+      gravity: 1.5,
+      particles: 50,
+      traceLength: 3,
+      traceSpeed: 10,
+      explosion: 5,
+      intensity: 30,
+      flickering: 50,
+      lineStyle: 'round',
+      hue: {
+        min: 0,
+        max: 360,
+      },
+      delay: {
+        min: 30,
+        max: 60,
+      },
+      rocketsPoint: {
+        min: 50,
+        max: 50,
+      },
+      lineWidth: {
+        explosion: {
+          min: 1,
+          max: 3,
+        },
+        trace: {
+          min: 1,
+          max: 2,
+        },
+      },
+      brightness: {
+        min: 50,
+        max: 80,
+      },
+      decay: {
+        min: 0.015,
+        max: 0.03,
+      },
+      mouse: {
+        click: false,
+        move: false,
+        max: 1,
+      },
+    });
+    fireworks.start();
+  }
 };
 export default function Contact(): React.JSX.Element {
   const {
@@ -21,6 +76,12 @@ export default function Contact(): React.JSX.Element {
     register,
     setError,
   } = useForm<Inputs>();
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      fireScript();
+    }
+  }, [isSubmitSuccessful]);
 
   const submit = useSubmit<Inputs>(
     process.env.NEXT_PUBLIC_REACT_APP_REACT_HOOK_FORM_ID as string,
@@ -45,7 +106,7 @@ export default function Contact(): React.JSX.Element {
   );
 
   return (
-    <main className=" flex flex-col w-full h-screen items-center justify-start p-12 gap-16 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
+    <main className="main flex flex-col w-full h-screen items-center justify-start p-12 gap-16 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
       <div className="contact_form_title flex flex-col gap-6 p-2 lg:gap-0 xl:flex-row items-center justify-center">
         <h1 className="mt-32 text-pretty text-3xl lg:text-6xl font-montserrat font-bold text-white">
           {isSubmitSuccessful
@@ -80,15 +141,8 @@ export default function Contact(): React.JSX.Element {
           />
         ) : null}
       </div>
-      {/* Animation Fireworks */}
-      {isSubmitSuccessful ? (
-        <iframe
-          loading="lazy"
-          src="https://lottie.host/embed/74241b77-4958-483d-b2dc-668f5aa16277/t44RX5krsj.json"
-          height={calcScreenWidth() > 500 ? 500 : calcScreenWidth()}
-          width={calcScreenWidth() > 500 ? 500 : calcScreenWidth()}
-        />
-      ) : null}{' '}
+
+      {/* Text content */}
       <div className="flex flex-col w-full sm:w-3/4 gap-2 mt-10">
         {isSubmitSuccessful ? null : (
           <div className="flex flex-col sm:flex-row justify-between w-full ">
@@ -109,6 +163,9 @@ export default function Contact(): React.JSX.Element {
         >
           {isSubmitSuccessful ? (
             <div className="flex flex-col items-center gap-10">
+              {/* Firework animation */}
+              {<canvas className="canvas h-full w-full max-h-96 hidden " />}
+              {/*  */}
               <h2 className="text-lg text-pretty sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
                 Message bien reçu, nous vous répondrons bientôt !
               </h2>
@@ -208,7 +265,7 @@ export default function Contact(): React.JSX.Element {
                   </ul>
                 </div>
               )}
-              <div className="btn_container group flex justify-center items-center mt-10">
+              <div className="btn_container group flex justify-center items-center mt-10 mb-10">
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -217,7 +274,7 @@ export default function Contact(): React.JSX.Element {
                   aria-label="Bouton d`envoi du formulaire de contact"
                 >
                   {isSubmitting ? (
-                    'En cours d`envoi...'
+                    'Envoi en cours ...'
                   ) : (
                     <div className="flex justify-center items-center text-nowrap gap-1  text-blue-800 group-hover:text-white transition-all duration-300 ease-in-out">
                       Envoyer

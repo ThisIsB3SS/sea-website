@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PrivacyPolicy(): JSX.Element {
   return (
-    <main className="Privacy_section w-full  flex bg-gradient-to-br from-blue-300 to-green-200 ">
+    <main className="Privacy_section w-full  flex bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500 ">
       <div
         className="privacy-policy w-full px-10 sm:px-20 mx-auto mt-32 mb-20 text-black flex flex-col justify-center items-center  gap-10
       text-pretty"
@@ -47,7 +47,8 @@ export default function PrivacyPolicy(): JSX.Element {
           https://seawebstudio/cgu-mentions-légales/
         </a>
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-        Article 2 : Principes Relatifs À La Collecte Et Au Traitement Des Données Personnelles
+          Article 2 : Principes Relatifs À La Collecte Et Au Traitement Des
+          Données Personnelles
         </h2>
         <p className="text-lg md:text-xl">
           Conformément à l’article 5 du Règlement européen 2016/679, les données
@@ -123,7 +124,8 @@ export default function PrivacyPolicy(): JSX.Element {
           </li>
         </ul>
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-        Article 3 : Données À Caractère Personnel Collectées Et Traitées Dans Le Cadre De La Navigation Sur Le Site
+          Article 3 : Données À Caractère Personnel Collectées Et Traitées Dans
+          Le Cadre De La Navigation Sur Le Site
         </h2>
         <h3 className="text-xl md:text-2xl  font-montserrat  text-black font-semibold ">
           Article 3.1 : Données collectées
@@ -201,7 +203,8 @@ export default function PrivacyPolicy(): JSX.Element {
           Netlify, Inc, 512 2nd Street, Suite 200 San Francisco, CA 94107
         </p>
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-        Article 4 : Responsable Du Traitement Des Données Et Délégué À La Protection Des Données
+          Article 4 : Responsable Du Traitement Des Données Et Délégué À La
+          Protection Des Données
         </h2>
         <h3 className="text-xl md:text-2xl  font-montserrat  text-black font-semibold ">
           Article 4.1 : Le responsable du traitement des données
@@ -256,7 +259,8 @@ export default function PrivacyPolicy(): JSX.Element {
           adresser une information à la CNIL.
         </p>
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-        Article 5 : Les Droits De L’Utilisateur En Matière De Collecte Et De Traitement Des Données{' '}
+          Article 5 : Les Droits De L’Utilisateur En Matière De Collecte Et De
+          Traitement Des Données{' '}
         </h2>
         <p className="text-lg md:text-xl">
           Tout utilisateur concerné par le traitement de ses données
@@ -302,7 +306,8 @@ export default function PrivacyPolicy(): JSX.Element {
           </p>
         </ul>
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-        Article 6 : Conditions De Modification De La Politique De Confidentialité{' '}
+          Article 6 : Conditions De Modification De La Politique De
+          Confidentialité{' '}
         </h2>
         <p className="text-lg md:text-xl">
           L’éditeur du site « 
