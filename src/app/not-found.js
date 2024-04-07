@@ -1,6 +1,6 @@
 import Image from 'next/image';
-
-export default function Error(): JSX.Element {
+import Link from 'next/link';
+export default function Custom404() {
   return (
     <main className="w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
       <div className="flex flex-col justify-center items-center mt-24 gap-10">
@@ -22,13 +22,13 @@ export default function Error(): JSX.Element {
           />
         </div>
       </div>
-      <a
+      <Link
         href="/"
         className='underline underline-offset-4 mb-10 text-xl text-center hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
 '
       >
         Retour à l'accueil
-      </a>
+      </Link>
     </main>
   );
 }

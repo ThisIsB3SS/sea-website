@@ -6,6 +6,7 @@ import '../styles/custom.css';
 import { Header } from '@/components/components/Header';
 import 'animate.css';
 import { Footer } from '@/components/components/Footer';
+import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -42,6 +43,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Link href="/404"></Link>
           <Header />
           {children}
           <Footer />
