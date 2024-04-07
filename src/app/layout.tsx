@@ -1,17 +1,38 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Inter } from 'next/font/google';
+import { Header } from '@/components/components/Header';
+import { Footer } from '@/components/components/Footer';
 import '../styles/globals.css';
 import '../styles/custom.css';
-import { Header } from '@/components/components/Header';
 import 'animate.css';
-import { Footer } from '@/components/components/Footer';
-import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'SEA Webstudio',
   description: 'SEA Webstudio - Création, Développement & Stratégie Web',
+  openGraph: {
+    title: 'SEA Webstudio',
+    description: 'SEA Webstudio - Création, Développement & Stratégie Web',
+    url: 'https://seawebstudio.com/',
+    siteName: 'SEA Webstudio',
+    images: [
+      {
+        url: 'https://seawebstudio.com/assets/Logo_entier_SEA_Webstudio.svg', // Must be an absolute URL
+        width: 800,
+        height: 800,
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SEA Webstudio',
+    description: 'SEA Webstudio - Création, Développement & Stratégie Web',
+    creator: '@seawebstudio',
+    images: ['https://seawebstudio.com/assets/Logo_entier_SEA_Webstudio.svg'], // Must be an absolute URL
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +47,7 @@ export default function RootLayout({
           rel="shortcut icon"
           href="/assets/favicon.ico"
           type="image/x-icon"
+          sizes="any"
         />
       </head>
       <body
@@ -43,7 +65,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Link href="/404"></Link>
           <Header />
           {children}
           <Footer />
