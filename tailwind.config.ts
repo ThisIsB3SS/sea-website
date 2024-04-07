@@ -65,7 +65,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-          'custom-gradient': "linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%)",
+          'custom-gradient': "linear-gradient(to bottom, #48c6ef 0%, #6f86d6 100%);",
 
         'hero-pattern': "url('/assets/Eléments_Graphiques/Eléments_Graphiques/Plan de travail 108.svg')",
       },
@@ -109,6 +109,10 @@ const config = {
           from:{transform: 'translateX(100%)'},
           to:{transform: 'translateX(0)'},
         },
+        "fullHeight": {
+          from:{transform: 'translateY(100%)'},
+          to:{transform: 'translateY(0)'},
+        },
     
     
      
@@ -123,6 +127,8 @@ const config = {
         'float': 'float 3s ease-in-out infinite',
         'flip': 'flip 2s ease',
         'fullWidth': 'fullWidth 0.5s ease-in-out forwards',
+        'fullHeight': 'fullWidth 0.5s ease-in-out forwards',
+
       },
       fontFamily: {
         pinkerston: ["'Pinkerston'", 'sans-serif'],

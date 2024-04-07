@@ -17,9 +17,7 @@ export function Hero() {
       </h1>
       <CtaSection />
       <SurfGirl />
-      {/* <div className="absolute bottom-0 w-full bg-cover">
-        <Image src={wave} alt="wave" />
-        </div> */}
+    
     </div>
   );
 }

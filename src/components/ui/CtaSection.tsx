@@ -8,17 +8,17 @@ export function CtaSection() {
         href="contact"
         className="flex justify-center items-center text-center"
       >
-        <div className=" flex flex-col sm:flex-row p-6 gap-4 justify-around items-center  min-h-full border border-gray-50 shadow-md rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-700">
-          <h2 className="font-montserrat text-xl xl:text-2xl italic text-slate-800  ">
+        <div className=" flex flex-col p-6  sm:w-auto sm:flex-row sm:p-10 gap-4 justify-around items-center   border border-gray-50 shadow-md rounded-3xl sm:rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-700">
+          <h2 className="font-montserrat text-pretty text-xl xl:text-2xl italic text-slate-800  ">
             Création, Développement,
             <br /> Stratégie Web & Mobile{' '}
           </h2>
-          <div className=" flex overflow-hidden justify-center items-center gap-5 mt-2 lg:mt-0 group ">
-            <h2 className="text-nowrap w-0 opacity-0 group-hover:animate-fullWidth group-hover:w-fit  group-hover:opacity-100 text-lg lg:text-2xl font-bold  text-blue-500 group-hover:text-blue-700 transition-all duration-1600 ease-in-out">
+          <div className=" flex flex-col sm:flex-row overflow-hidden justify-center items-center gap-5 mt-2 lg:mt-0 group ">
+            <h2 className="text-nowrap w-0 h-0 sm:h-auto opacity-0 group-hover:animate-fullHeight sm:group-hover:animate-fullWidth group-hover:w-fit  group-hover:opacity-100 text-lg lg:text-2xl font-bold  text-blue-500 group-hover:text-blue-700 transition-all duration-1600 ease-in-out">
               Contactez-nous{' '}
             </h2>
 
-            <span className="w-10 h-10 p-2 flex content-center items-center bg-white rounded-full animate-pulse rotate-90 sm:rotate-0">
+            <span className="mt-2 sm:mt-0 w-10 h-10 p-2 flex content-center items-center bg-white rounded-full animate-pulse rotate-90 -translate-y-5 group-hover:translate-y-0 sm:translate-y-0  sm:rotate-0">
               <svg
                 width="20"
                 height="20"

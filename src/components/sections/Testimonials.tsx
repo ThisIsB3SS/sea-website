@@ -63,7 +63,7 @@ export function Testimonials() {
                 height={150}
                 objectPosition="center"
               />
-              <div className="author_infos flex flex-col items-center gap-2">
+              <div className="author_infos flex flex-col sm:items-center gap-2">
                 <h4 className="auteur  text-2xl font-bold">{element.auteur}</h4>
                 <h5 className="poste  text-xl font-semibold">
                   {element.poste}
