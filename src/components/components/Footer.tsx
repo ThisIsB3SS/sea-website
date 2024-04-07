@@ -5,7 +5,7 @@ import Markdown from 'react-markdown';
 
 export function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row px-16 pb-4 justify-between items-center max-h-80 min-h-32 text-white bg-gradient-to-t from-black to-custom-blue">
+    <footer className="flex flex-col md:flex-row px-16 pb-4 justify-between items-center max-h-full min-h-32 text-white bg-gradient-to-t from-black to-custom-blue">
       {/* 1ère colonne */}
       <div className="copyright font-thin order-2 flex flex-col mt-4 md:mt-0 text-center ">
         <Link

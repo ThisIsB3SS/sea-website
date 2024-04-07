@@ -35,7 +35,7 @@ export function Projects() {
               <div className="Projects_section_item_content w-full flex flex-col items-center justify-center  xl:flex-row  ">
                 <div className="Projects_section_item_content_image order-1 w-3/4">
                   <Image
-                    className=" w-full rounded-xl lg:opacity-50 group-hover:opacity-100 group-hover:scale-105  transition-all duration-300 ease-in-out"
+                    className=" w-full rounded-xl xl:opacity-50 xl:group-hover:opacity-100 group-hover:scale-105  transition-all duration-300 ease-in-out"
                     src={project.image}
                     alt={`${project.title} image du projet`}
                     width={500}

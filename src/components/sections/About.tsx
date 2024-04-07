@@ -45,8 +45,8 @@ export function About() {
             sur-mesure qui captivent votre audience et dynamisent votre
             activité.
           </p>
-          <button className="button ">
-            <a href="/contact">Nous contacter</a>
+          <button className="button group ">
+            <a href="/contact" className='text-blue-800 group-hover:text-white transition-all duration-200'>Nous contacter</a>
           </button>
         </div>
       </div>

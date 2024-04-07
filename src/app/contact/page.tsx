@@ -106,9 +106,9 @@ export default function Contact(): React.JSX.Element {
   );
 
   return (
-    <main className="main flex flex-col w-full h-screen items-center justify-start p-12 gap-16 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
-      <div className="contact_form_title flex flex-col gap-6 p-2 lg:gap-0 xl:flex-row items-center justify-center">
-        <h1 className="mt-32 text-pretty text-3xl lg:text-6xl font-montserrat font-bold text-white">
+    <main className=" flex flex-col w-full h-screen items-center justify-start px-12   bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
+      <div className="contact_form_title mb-10 flex  flex-col gap-6 p-2 lg:gap-0 xl:flex-row items-center justify-center">
+        <h1 className=" mt-32 text-pretty text-3xl lg:text-6xl font-montserrat font-bold text-white">
           {isSubmitSuccessful
             ? 'Merci de nous avoir contacté !'
             : 'Contactez-nous'}
@@ -124,7 +124,7 @@ export default function Contact(): React.JSX.Element {
           height={200}
           className={
             isSubmitSuccessful
-              ? 'animate-move-up-and-down h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  mt-20'
+              ? 'animate-move-up-and-down z-50 h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  mt-20'
               : 'animate-rotate-yoyo h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  lg:mt-20'
           }
         />
@@ -143,7 +143,7 @@ export default function Contact(): React.JSX.Element {
       </div>
 
       {/* Text content */}
-      <div className="flex flex-col w-full sm:w-3/4 gap-2 mt-10">
+      <div className="flex flex-col w-full  sm:w-3/4 gap-2 mt-10">
         {isSubmitSuccessful ? null : (
           <div className="flex flex-col sm:flex-row justify-between w-full ">
             <h2 className="text-2xl md:text-3xl text-blue-800  font-semibold  ">
@@ -162,20 +162,22 @@ export default function Contact(): React.JSX.Element {
           }
         >
           {isSubmitSuccessful ? (
-            <div className="flex flex-col items-center gap-10">
+            <div className="flex flex-col items-center mb-10 gap-10">
               {/* Firework animation */}
-              {<canvas className="canvas h-full w-full max-h-96 hidden " />}
+              {<canvas className="canvas  w-full max-h-96 " />}
               {/*  */}
               <h2 className="text-lg text-pretty sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
                 Message bien reçu, nous vous répondrons bientôt !
               </h2>
-              <a
-                href="/"
-                className="underline text-xl text-center hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
-                aria-label="Bouton de retour à l'accueil du site"
-              >
-                Retour à l'accueil
-              </a>
+              <button className="button group">
+                <a
+                  href="/"
+                  className=" text-xl text-center text-blue-800 group-hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
+                  aria-label="Bouton de retour à l'accueil du site"
+                >
+                  Retour à l'accueil
+                </a>
+              </button>
             </div>
           ) : (
             <form
