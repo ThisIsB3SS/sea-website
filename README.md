@@ -1,23 +1,18 @@
 # SEA Webstudio
-## Official repo of seawebstudio.com 
+
+## Official repo of seawebstudio.com
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c23d3e8f-63c3-41f5-a61d-0f392169fc78/deploy-status)](https://app.netlify.com/sites/seawebstudio/deploys)
 
-
-
-SEA Webstudio is a digital agency for creation, development and digital strategy. 🚀    
-Go check our [website](seawebstudio.com) ! 🌐     
-Let's have a talk !👋🏻 contact@webstudio.com  
-
-
+SEA Webstudio is a digital agency for creation, development and digital strategy. 🚀  
+Go check our [website](seawebstudio.com) ! 🌐  
+Let's have a talk !👋🏻 contact@webstudio.com
 
 ## Features
 
 - All the files and source code is here !
 - Built with 💖 with [NextJS](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/) & [TailwindCSS](https://tailwindcss.com/) !
-
-
-
 
 ## Installation 💻
 
@@ -33,21 +28,26 @@ cd sea-website
 npm i
 
 ```
+
 - [YARN](https://yarnpkg.com/)
+
 ```sh
 cd sea-website
 yarn
 
 ```
-- [PNPM](https://pnpm.io/) 
+
+- [PNPM](https://pnpm.io/)
+
 ```sh
 cd sea-website
-pnpm 
+pnpm
 
 ```
 
 ## Run 🚀
-Open http://localhost:3000 with your browser to see the result after typing this : 
+
+Open http://localhost:3000 with your browser to see the result after typing this :
 
 - [NPM](https://www.npmjs.com/)
 
@@ -56,21 +56,24 @@ cd sea-website
 npm run dev
 
 ```
+
 - [YARN](https://yarnpkg.com/)
+
 ```sh
 cd sea-website
 yarn run dev
 
 ```
-- [PNPM](https://pnpm.io/) 
+
+- [PNPM](https://pnpm.io/)
+
 ```sh
 cd sea-website
 pnpm run dev
 
 ```
+
 ## License ©️
+
 All rights reserved,
 Copyright 2024 SEA Webstudio
-
-
-
