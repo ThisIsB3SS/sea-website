@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'SEA Webstudio',
     images: [
       {
-        url: 'https://seawebstudio.com/assets/Logo_entier_SEA_Webstudio.svg', // Must be an absolute URL
+        url: 'https://seawebstudio.com/assets/Logo_SEA_Webstudio.jpg', // Must be an absolute URL
         width: 800,
         height: 800,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'SEA Webstudio',
     description: 'SEA Webstudio - Création, Développement & Stratégie Web',
     creator: '@seawebstudio',
-    images: ['https://seawebstudio.com/assets/Logo_entier_SEA_Webstudio.svg'], // Must be an absolute URL
+    images: ['https://seawebstudio.com/assets/Logo_SEA_Webstudio.jpg'], // Must be an absolute URL
   },
 };
 
