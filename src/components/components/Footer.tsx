@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import '../../styles/custom.css';
 import Markdown from 'react-markdown';
 
@@ -6,7 +7,21 @@ export function Footer() {
   return (
     <footer className="flex flex-col md:flex-row px-16 pb-4 justify-between items-center max-h-80 min-h-32 text-white bg-gradient-to-t from-black to-custom-blue">
       {/* 1ère colonne */}
-      <div className="copyright font-thin order-2 flex flex-row sm:flex-col mt-4 md:mt-0 ">
+      <div className="copyright font-thin order-2 flex flex-col mt-4 md:mt-0 text-center ">
+        <Link
+          href="/cgu-legal"
+          aria-label="Lien vers les CGU & Mentions légales"
+          className="hover:text-white hover:scale-105 transition-all duration-100 ease-in-out"
+        >
+          CGU & Mentions légales
+        </Link>
+        <Link
+          href="/privacy-policy"
+          aria-label="Lien vers la politique de Confidentialité"
+          className="hover:text-white hover:scale-105 transition-all duration-100 ease-in-out mb-2"
+        >
+          Politique de confidentialité
+        </Link>
         <span className="">
           © Copyright 2024 <br /> All Rights Reserved <br /> Sea Webstudio
         </span>
@@ -14,14 +29,14 @@ export function Footer() {
 
       {/* 2ème colonne */}
       <div className="CtaFooter  flex flex-col justify-center items-center gap-4 p-2 order-1 md:order-2">
-        <div className="CtaFooter_wrapper w-auto text-nowrap text-3xl sm:text-4xl font-montserrat rounded-lg transition-colors duration-200 ease-out bg-transparent hover:bg-blue-800">
-          <a href="/contact">
+        <div className="CtaFooter_wrapper w-auto text-nowrap text-3xl sm:text-4xl font-montserrat rounded-lg transition-all duration-300 ease-out bg-transparent hover:scale-105">
+          <Link href="/contact">
             <h2>Contactez-nous</h2>
-          </a>
+          </Link>
         </div>
         <div className="Socials flex items-center justify-between gap-2">
           {/* mail */}
-          <a
+          <Link
             href="mailto:contact@seawebstudio.com"
             target="_blank"
             aria-label="Envoyer un mail à SEA Webstudio"
@@ -37,9 +52,9 @@ export function Footer() {
                 d="M18.175 17H15q-.425 0-.712-.288T14 16q0-.425.288-.712T15 15h3.175l-.9-.9Q17 13.825 17 13.413t.3-.713q.275-.275.7-.275t.7.275l2.6 2.6q.125.125.2.312t.075.388q0 .2-.075.387t-.2.313l-2.6 2.6q-.275.275-.687.288T17.3 19.3q-.275-.275-.275-.7t.275-.7zM10.4 11L17 7.15V5h-.25L10.4 8.675L4.225 5H4v2.2zm-6.525 6q-.775 0-1.325-.55T2 15.125V4.875q0-.775.55-1.325T3.875 3h13.25q.775 0 1.325.55T19 4.875V9.2q0 .35-.275.6t-.625.225q-1.225-.05-2.337.4t-1.988 1.325q-.875.875-1.338 2t-.412 2.35q.025.35-.225.625t-.6.275z"
               ></path>
             </svg>
-          </a>
+          </Link>
           {/* linkedin */}
-          <a
+          <Link
             href="https://www.linkedin.com/in/sebastien-escudero/"
             target="_blank"
             aria-label="Suivez-nous sur LinkedIn"
@@ -50,9 +65,9 @@ export function Footer() {
               width={40}
               height={40}
             />
-          </a>
+          </Link>
           {/* Gif Parrot */}
-          <a
+          <Link
             href="/contact"
             aria-label="Contactez-nous avec le formulaire de contact"
           >
@@ -63,9 +78,9 @@ export function Footer() {
               width={40}
               height={40}
             />
-          </a>
+          </Link>
           {/* Github */}
-          <a
+          <Link
             href="https://github.com/beseb"
             target="_blank"
             aria-label="Follow us on Github !"
@@ -76,9 +91,9 @@ export function Footer() {
               height={40}
               width={40}
             ></Image>
-          </a>
+          </Link>
           {/* Codeur */}
-          <a
+          <Link
             href="https://www.codeur.com/-sebastien_sq"
             target="_blank"
             aria-label="Suivez-nous sur Codeur.com !"
@@ -89,7 +104,7 @@ export function Footer() {
               height={40}
               width={40}
             />
-          </a>
+          </Link>
         </div>
         {/* Badge Codeur */}
         <div>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default function CGU(): React.JSX.Element {
   return (
     <main className="CGU_section w-full flex bg-gradient-to-br from-blue-300 to-green-200  ">
