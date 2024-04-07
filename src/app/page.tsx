@@ -10,9 +10,8 @@ export default function Home() {
   const bg1 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
   const bg2 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107.svg';
   return (
-    <main className="w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
-
-      <div id="about"></div>
+    <main className="w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-custom-gradient ">
+      <Hero />
       <div
         className="about-carousel-banner-wrapper w-full min-h-screen m-0 flex flex-col justify-around "
         style={{
@@ -21,7 +20,7 @@ export default function Home() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <Hero />
+        <div id="about"></div>
         <About />
         <div id="services"></div>
         <Services />
@@ -38,7 +37,6 @@ export default function Home() {
         }}
       >
         <Testimonials />
-        <div className="spacer min-h-40 w-full"></div>
       </div>
     </main>
   );

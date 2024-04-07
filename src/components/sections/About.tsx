@@ -2,7 +2,7 @@ import Image from 'next/image';
 import aboutImage from '/public/assets/about-image.svg';
 export function About() {
   return (
-    <div className="About_section w-full flex flex-col justify-center items-center px-6 md:px-20 mt-10 md:mt-20">
+    <div className="About_section w-full flex flex-col justify-center items-center px-6 md:px-20 mt-10 md:mt-20 animate__animated animate__slideInLeft">
       <div className="About_content_1  w-full">
         <h2 className="About_title text-2xl md:text-3xl  font-montserrat font-thin italic text-blue-800">
           SEA WEBSTUDIO
@@ -18,7 +18,11 @@ export function About() {
         </div>
       </div>
       <div className="About_content_2 w-full flex flex-col xl:flex-row items-center justify-center text-justify  lg:pl-40 lg:gap-12 xl:gap-40 mt-12">
-        <Image src={aboutImage} alt="about" className="bg-transparent w-1/3 lg:w-1/4 xl:w-1/6 order-1 " />
+        <Image
+          src={aboutImage}
+          alt="about"
+          className="bg-transparent w-1/3 lg:w-1/4 xl:w-1/6 order-1 "
+        />
         <div className="about_text flex flex-col items-center justify-center gap-4 order-2 xl:w-1/2">
           <span className="font-montserrat text-3xl text-white">
             {' '}
@@ -32,8 +36,8 @@ export function About() {
             Dans l'univers digital actuel, l'excellence ne s'improvise pas. Elle
             résulte d'une parfaite harmonie entre innovation, design intuitif et
             technologie avancée. <br />{' '}
-            <span className="font-bold">SEA Webstudio</span>{' '}
-            incarne cette synergie en offrant des services intégrés de{' '}
+            <span className="font-bold">SEA Webstudio</span> incarne cette
+            synergie en offrant des services intégrés de{' '}
             <span className="font-bold">
               conception, développement et stratégie web
             </span>

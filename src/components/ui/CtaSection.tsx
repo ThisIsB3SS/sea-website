@@ -1,22 +1,24 @@
 import '../../styles/custom.css';
+import { useEffect } from 'react';
 
 export function CtaSection() {
   return (
-    <div className="hero_cta_section z-10 w-full lg:p-16 mt-8 sm:mt-20 mb-10 mx-auto  animate__animated animate__fadeIn">
+    <div className="hero_cta_section group z-10 box-content lg:p-16 mt-8 sm:mt-20 mb-10 mx-auto  animate__animated animate__fadeIn">
       <a
         href="contact"
         className="flex justify-center items-center text-center"
       >
-        <div className="group flex flex-col sm:flex-row p-6 gap-4 justify-around items-center  min-h-full border border-gray-50 shadow-md rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-700">
+        <div className=" flex flex-col sm:flex-row p-6 gap-4 justify-around items-center  min-h-full border border-gray-50 shadow-md rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-700">
           <h2 className="font-montserrat text-xl xl:text-2xl italic text-slate-800  ">
             Création, Développement,
             <br /> Stratégie Web & Mobile{' '}
           </h2>
-          <div className="flex justify-center items-center gap-5 mt-2 lg:mt-0">
-            <span className="text-lg lg:text-2xl font-bold  text-blue-500 group-hover:text-blue-700 transition-all duration-300 ease-in-out">
+          <div className=" flex overflow-hidden justify-center items-center gap-5 mt-2 lg:mt-0 group ">
+            <h2 className="text-nowrap w-0 opacity-0 group-hover:animate-fullWidth group-hover:w-fit  group-hover:opacity-100 text-lg lg:text-2xl font-bold  text-blue-500 group-hover:text-blue-700 transition-all duration-1600 ease-in-out">
               Contactez-nous{' '}
-            </span>
-            <span className="w-10 h-10 p-2 flex content-center items-center bg-white rounded-full">
+            </h2>
+
+            <span className="w-10 h-10 p-2 flex content-center items-center bg-white rounded-full animate-pulse rotate-90 sm:rotate-0">
               <svg
                 width="20"
                 height="20"

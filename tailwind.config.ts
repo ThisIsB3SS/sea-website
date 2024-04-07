@@ -1,3 +1,5 @@
+import { WidthIcon } from "@radix-ui/react-icons";
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss"
 const defaultTheme = require("tailwindcss/defaultTheme");
 
@@ -63,6 +65,8 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
+          'custom-gradient': "linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%)",
+
         'hero-pattern': "url('/assets/Eléments_Graphiques/Eléments_Graphiques/Plan de travail 108.svg')",
       },
       keyframes: {
@@ -100,7 +104,13 @@ const config = {
         "flip": {
           from: { transform: 'rotate(0deg)' },
           to: { transform: 'rotate(-360deg)' },
-        }
+        },
+        "fullWidth": {
+          from:{transform: 'translateX(100%)'},
+          to:{transform: 'translateX(0)'},
+        },
+    
+    
      
       },
       animation: {
@@ -112,6 +122,7 @@ const config = {
         'slideAndWave': 'slideAndWave 4s ease-in-out forwards',
         'float': 'float 3s ease-in-out infinite',
         'flip': 'flip 2s ease',
+        'fullWidth': 'fullWidth 0.5s ease-in-out forwards',
       },
       fontFamily: {
         pinkerston: ["'Pinkerston'", 'sans-serif'],
