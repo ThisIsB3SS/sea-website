@@ -1,5 +1,4 @@
 import '../../styles/custom.css';
-import { useEffect } from 'react';
 
 export function CtaSection() {
   return (

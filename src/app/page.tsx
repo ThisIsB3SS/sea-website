@@ -1,7 +1,6 @@
 import { CarouselBanner } from '@/components/sections/CarouselBanner';
 import { Hero } from '@/components/sections/Hero';
 import { Projects } from '@/components/sections/Projects';
-import { ModeToggle } from '@/components/mode-toggle';
 import { About } from '@/components/sections/About';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Services } from '@/components/sections/Services';
