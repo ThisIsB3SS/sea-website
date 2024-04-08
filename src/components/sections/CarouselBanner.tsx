@@ -9,7 +9,7 @@ export function CarouselBanner() {
        Nos technologies
       </h2>
       <h2 className="carouselBanner_title text-4xl sm:text-6xl md:text-7xl md:w-full text-white px-6 md:px-20 mb-10">
-        Nos <span className="font-pinkerston">Outils</span> De Tous Les Jours
+        Nos <span className="font-pinkerston">Outils</span> Favoris
       </h2>
       <div className="carouselBanner_innerContainer">
         <div className="carouselBanner_innerContainer2">

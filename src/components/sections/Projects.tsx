@@ -28,7 +28,7 @@ export function Projects() {
             className="Projects_section_item group flex flex-col  lg:block border  border-t-1 border-b-0 last:border-b-1  border-x-0 border-opacity-30 w-full py-4 lg:opacity-50 hover:opacity-100 transition-all duration-300 ease-in-out "
           >
             <a
-              id="Project_item_link h-full"
+              className="Project_item_link h-full"
               href={project.link}
               aria-label={`Lien vers le projet ${project.title}`}
             >
