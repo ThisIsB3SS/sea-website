@@ -3,6 +3,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from '@/components/components/Header';
 import { Footer } from '@/components/components/Footer';
 import { OnlineBusiness, Thing, WithContext } from 'schema-dts';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import '../styles/globals.css';
 import '../styles/custom.css';
 import 'animate.css';
@@ -40,7 +41,18 @@ export const MyOnlineBusiness = JsonLd<OnlineBusiness>({
 
 export const metadata: Metadata = {
   referrer: 'origin-when-cross-origin',
-  keywords: ['Création Web', 'Développement Web', 'Stratégie Web', 'SEA Webstudio', 'Agence Web', 'Webdesign', 'Webmarketing', 'SEO', 'SEA', 'SMM'],
+  keywords: [
+    'Création Web',
+    'Développement Web',
+    'Stratégie Web',
+    'SEA Webstudio',
+    'Agence Web',
+    'Webdesign',
+    'Webmarketing',
+    'SEO',
+    'SEA',
+    'SMM',
+  ],
   title: 'SEA Webstudio',
   description:
     'SEA Webstudio - votre agence experte en création de sites web, développement sur mesure et stratégies digitales innovantes. Spécialisés dans la conception de solutions web performantes et esthétiques, nous accompagnons les entreprises de toutes tailles dans leur succès en ligne. Découvrez comment nous pouvons transformer votre présence web.',
@@ -119,6 +131,7 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="GTM-PGBPMJG5" />
     </html>
   );
 }
