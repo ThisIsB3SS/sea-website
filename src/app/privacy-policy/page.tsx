@@ -4,7 +4,7 @@ export default function PrivacyPolicy(): JSX.Element {
   return (
     <main className="Privacy_section w-full  flex bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500 ">
       <div
-        className="privacy-policy w-full px-10 sm:px-20 mx-auto mt-32 mb-20 text-black flex flex-col justify-center items-center  gap-10
+        className="privacy-policy w-full px-10 sm:px-40 xl:px-60 mx-auto mt-32 mb-20 text-black flex flex-col justify-center items-center  gap-10
       text-pretty"
       >
         <h1 className="text-xl md:text-3xl text-blue-800 font-bold sm:text-center">

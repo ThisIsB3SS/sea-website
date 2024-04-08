@@ -4,7 +4,7 @@ export default function CGU(): React.JSX.Element {
   return (
     <main className="CGU_section w-full flex bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500  ">
       <div
-        className="termsOfService w-full px-10 sm:px-20 mx-auto  mb-20 mt-32 text-black flex flex-col  gap-10
+        className="termsOfService w-full px-10 sm:px-40 xl:px-60 mx-auto  mb-20 mt-32 text-black flex flex-col  gap-10
       text-pretty"
       >
         <h1 className="text-xl md:text-3xl   text-blue-800 font-bold sm:text-center">
@@ -48,7 +48,7 @@ export default function CGU(): React.JSX.Element {
         </p>
 
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-          ARTICLE 2 : Accès au site
+          Article 2 : Accès au site
         </h2>
         <p className="text-lg md:text-xl">
           Le site seawebstudio.com permet à l'Utilisateur un accès gratuit aux
@@ -65,7 +65,7 @@ export default function CGU(): React.JSX.Element {
         </p>
 
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-          ARTICLE 3 : Collecte des données
+          Article 3 : Collecte des données
         </h2>
         <p className="text-lg md:text-xl">
           Le site assure à l'Utilisateur une collecte et un traitement
@@ -89,7 +89,7 @@ export default function CGU(): React.JSX.Element {
           <li>via le formulaire de contact du site.</li>
         </ul>
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-          ARTICLE 4 : Propriété intellectuelle
+          Article 4 : Propriété intellectuelle
         </h2>
         <p className="text-lg md:text-xl">
           Les marques, logos, signes ainsi que tous les contenus du site
@@ -107,17 +107,17 @@ export default function CGU(): React.JSX.Element {
         <p className="text-lg md:text-xl">
           Toute représentation totale ou partielle de ce site par quelque
           procédé que ce soit, sans l’autorisation expresse de l’exploitant du
-          site Internet constituerait une contrefaçon sanctionnée par l’article
+          site Internet constituerait une contrefaçon sanctionnée par l’Article
           L 335-2 et suivants du Code de la propriété intellectuelle.
         </p>
         <p className="text-lg md:text-xl">
-          Il est rappelé conformément à l’article L122-5 du Code de propriété
+          Il est rappelé conformément à l’Article L122-5 du Code de propriété
           intellectuelle que l’Utilisateur qui reproduit, copie ou publie le
           contenu protégé doit citer l’auteur et sa source.
         </p>
 
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-          ARTICLE 5 : Responsabilité
+          Article 5 : Responsabilité
         </h2>
         <p className="text-lg md:text-xl">
           Les sources des informations diffusées sur le site seawebstudio.com
@@ -145,7 +145,7 @@ export default function CGU(): React.JSX.Element {
         </p>
 
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-          ARTICLE 6 : Liens hypertextes
+          Article 6 : Liens hypertextes
         </h2>
         <p className="text-lg md:text-xl">
           Des liens hypertextes peuvent être présents sur le site. L’Utilisateur
@@ -155,7 +155,7 @@ export default function CGU(): React.JSX.Element {
           responsable de leur contenu.
         </p>
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-          ARTICLE 7 : Cookies
+          Article 7 : Cookies
         </h2>
         <p className="text-lg md:text-xl">
           L’Utilisateur est informé que lors de ses visites sur le site, un
@@ -196,14 +196,14 @@ export default function CGU(): React.JSX.Element {
         </p>
 
         <h2 className="text-2xl md:text-3xl  font-montserrat  italic text-blue-800 font-semibold sm:text-center">
-          ARTICLE 8 : Droit applicable et juridiction compétente
+          Article 8 : Droit applicable et juridiction compétente
         </h2>
         <p className="text-lg md:text-xl">
           La législation française s'applique au présent contrat. En cas
           d'absence de résolution amiable d'un litige né entre les parties, les
           tribunaux français seront seuls compétents pour en connaître. Pour
           toute question relative à l’application des présentes CGU, vous pouvez
-          joindre l’éditeur aux coordonnées inscrites à l’ARTICLE 1.
+          joindre l’éditeur aux coordonnées inscrites à l’Article 1.
         </p>
       </div>
     </main>
