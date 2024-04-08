@@ -37,7 +37,7 @@ export function Projects() {
                   <Image
                     className=" w-full rounded-xl xl:opacity-50 xl:group-hover:opacity-100 group-hover:scale-105  transition-all duration-300 ease-in-out"
                     src={project.image}
-                    alt={`${project.title} image du projet`}
+                    alt={`image du projet de ${project.title} `}
                     width={500}
                     height={300}
                   />
@@ -46,7 +46,7 @@ export function Projects() {
                   <h4 className="Projects_section_item_title text-wrap mt-6 text-6xl md:text-7xl  lg:text-9xl w-full h-full font-pinkerston group-hover:translate-y-[-15px] group-hover:text-white transition-all ease duration-200">
                     {project.title}
                   </h4>
-                  <h5 className="Projects_section_item_type text-xl md:text-3xl mt-2 mb-2 font-semibold">
+                  <h5 className="Projects_section_item_type text-xl md:text-3xl mt-2 mb-2 font-semibold group-hover:text-white transition-all ease duration-200">
                     {project.type}
                   </h5>
                   <div className="Projects_section_item_tags italic flex flex-wrap gap-1 md:gap-2 ">
