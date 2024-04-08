@@ -166,18 +166,16 @@ export default function Contact(): React.JSX.Element {
               {/* Firework animation */}
               {<canvas className="canvas  w-full max-h-96 " />}
               {/*  */}
-              <h2 className="text-lg text-pretty sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
+              <h2 className="text-lg text-pretty text-white sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
                 Message bien reçu, nous vous répondrons bientôt !
               </h2>
-              <button className="button group">
                 <a
                   href="/"
-                  className=" text-xl text-center text-blue-800 group-hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
+                  className="button text-xl flex place-items-center text-blue-800 group-hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
                   aria-label="Bouton de retour à l'accueil du site"
                 >
                   Retour à l'accueil
                 </a>
-              </button>
             </div>
           ) : (
             <form
