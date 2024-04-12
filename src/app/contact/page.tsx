@@ -106,8 +106,8 @@ export default function Contact(): React.JSX.Element {
   );
 
   return (
-    <main className=" flex flex-col w-full h-screen items-center justify-start px-12   bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
-      <div className="contact_form_title mb-10 flex  flex-col gap-6 p-2 lg:gap-0 xl:flex-row items-center justify-center">
+    <main className=" flex flex-col w-full h-auto items-center justify-start px-12   bg-gradient-to-tr from-blue-700 via-blue-300 to-emerald-500">
+      <div className="contact_form_title mb-auto flex  flex-col gap-6 p-2 lg:gap-0 xl:flex-row items-center justify-center">
         <h1 className=" mt-32 text-pretty text-3xl lg:text-6xl font-montserrat font-bold text-white">
           {isSubmitSuccessful
             ? 'Merci de nous avoir contacté !'
@@ -169,13 +169,13 @@ export default function Contact(): React.JSX.Element {
               <h2 className="text-lg text-pretty text-white sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
                 Message bien reçu, nous vous répondrons bientôt !
               </h2>
-                <a
-                  href="/"
-                  className="button text-xl flex place-items-center text-blue-800 group-hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
-                  aria-label="Bouton de retour à l'accueil du site"
-                >
-                  Retour à l'accueil
-                </a>
+              <a
+                href="/"
+                className="button text-xl flex place-items-center text-blue-800 group-hover:text-white hover:decoration-white hover:scale-105 transition-all ease duration-300"
+                aria-label="Bouton de retour à l'accueil du site"
+              >
+                Retour à l'accueil
+              </a>
             </div>
           ) : (
             <form
