@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Script from 'next/script';
-import { Fireworks } from 'fireworks-js';
+import Fireworks from '../../../public/firework.js';
 type Inputs = {
   email: string;
   message: string;
