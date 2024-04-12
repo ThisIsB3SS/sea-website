@@ -10,54 +10,7 @@ type Inputs = {
   name: string;
   phone: string;
 };
-type FireworksOptions = {
-  opacity: number;
-  acceleration: number;
-  friction: number;
-  gravity: number;
-  particles: number;
-  traceLength: number;
-  traceSpeed: number;
-  explosion: number;
-  intensity: number;
-  flickering: number;
-  lineStyle: 'round' | 'square';
-  hue: {
-    min: number;
-    max: number;
-  };
-  delay: {
-    min: number;
-    max: number;
-  };
-  rocketsPoint: {
-    min: number;
-    max: number;
-  };
-  lineWidth: {
-    explosion: {
-      min: number;
-      max: number;
-    };
-    trace: {
-      min: number;
-      max: number;
-    };
-  };
-  brightness: {
-    min: number;
-    max: number;
-  };
-  decay: {
-    min: number;
-    max: number;
-  };
-  mouse: {
-    click: boolean;
-    move: boolean;
-    max: number;
-  };
-};
+
 const fireScript = () => {
   const container = document.querySelector('.canvas') as
     | Element
