@@ -38,7 +38,7 @@ export function CarouselBanner() {
           </Marquee>
           <div className="separator border-t-2 border-gray-800 w-2/3 relative mx-auto mb-10"></div>
           {/* Liste 2 */}
-          {/* <Marquee play={true} direction="left" speed={40} loop={0}>
+          <Marquee play={true} direction="left" speed={40} loop={0}>
             <ul className="carouselBanner flex items-center justify-center gap-12">
               {Object.entries(logos.list2).map(([key, value]) => (
                 <li
@@ -55,7 +55,7 @@ export function CarouselBanner() {
                 </li>
               ))}
             </ul>
-          </Marquee> */}
+          </Marquee>
         </div>
       </div>
     </div>
