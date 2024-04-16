@@ -6,7 +6,7 @@ export function CarouselBanner() {
   return (
     <div className="carouselBanner_wrapper w-full ">
       <h2 className="About_title text-2xl md:text-3xl  font-montserrat font-thin italic text-blue-800 px-6 md:px-20">
-       Nos technologies
+        Nos technologies
       </h2>
       <h2 className="carouselBanner_title text-4xl sm:text-6xl md:text-7xl md:w-full text-white px-6 md:px-20 mb-10">
         Nos <span className="font-pinkerston">Outils</span> Favoris
@@ -27,9 +27,9 @@ export function CarouselBanner() {
                   <Image
                     src={`/assets/logos_carousel/${value}`}
                     alt={`${key} logo`}
-                    max-height={50}
                     height={50}
                     width={70}
+                    style={{ maxHeight: '50px' }}
                   />
                 </li>
               ))}
@@ -48,8 +48,8 @@ export function CarouselBanner() {
                     src={`/assets/logos_carousel/${value}`}
                     alt={`${key} logo`}
                     width={70}
-                    max-height={50}
                     height={50}
+                    style={{ maxHeight: '50px' }}
                   />
                 </li>
               ))}
