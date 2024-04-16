@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
 export function CarouselBanner() {
@@ -33,6 +33,12 @@ export function CarouselBanner() {
                 </li>
               ))}
             </ul> */}
+            <Image
+              src={'/assets/logos_carousel/android.svg'}
+              alt="android"
+              width={50}
+              height={50}
+            />
           </Marquee>
           <div className="separator border-t-2 border-gray-800 w-2/3 relative mx-auto mb-10"></div>
           {/* Liste 2 */}
