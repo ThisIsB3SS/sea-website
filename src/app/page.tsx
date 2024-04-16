@@ -4,10 +4,9 @@ import { Projects } from '@/components/sections/Projects';
 import { About } from '@/components/sections/About';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Services } from '@/components/sections/Services';
+import bg1 from '../../public/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
 
 export default function Home() {
-  const bg1 = '/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
-
   return (
     <main className="w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-custom-gradient ">
       <Hero />

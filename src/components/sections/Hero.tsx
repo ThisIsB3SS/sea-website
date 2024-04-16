@@ -1,8 +1,6 @@
 'use client';
 import { CtaSection } from '../ui/CtaSection';
 import { SurfGirl } from '../ui/SurfGirl';
-import wave from '/public/assets/wave.svg';
-import Image from 'next/image';
 export function Hero() {
   return (
     <div
@@ -17,7 +15,6 @@ export function Hero() {
       </h1>
       <CtaSection />
       <SurfGirl />
-    
     </div>
   );
 }
