@@ -1,5 +1,4 @@
-import logos from '../../../public/assets/logos_carousel/list_logos_carousel.json';
-import Image from 'next/image';
+
 import Marquee from 'react-fast-marquee';
 
 export function CarouselBanner() {
