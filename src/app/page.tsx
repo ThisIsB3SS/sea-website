@@ -20,15 +20,15 @@ export default function Home() {
       >
         <div id="about"></div>
         <About />
-        {/* <div id="services"></div>
+        <div id="services"></div>
         <Services />
-        <CarouselBanner />
+        {/* <CarouselBanner /> */}
       </div>
-      <div id="projects"></div>
+      {/* <div id="projects"></div>
       <div className="projects-testimonials-wrapper z-0 w-full min-h-screen m-0 mb-6 flex flex-col justify-around ">
         <Projects />
-        <Testimonials /> */}
-      </div>
+        <Testimonials />
+      </div> */}
     </main>
   );
 }
