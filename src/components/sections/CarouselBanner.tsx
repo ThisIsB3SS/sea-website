@@ -21,19 +21,19 @@ export function CarouselBanner() {
             loop={0}
             className="mb-10"
           >
-            <ul className="carouselBanner flex items-center justify-center gap-12">
-              {Object.entries(logos.list1).map(([key, value]) => (
-                <li key={key} className="carouselBanner_item">
+            {/* <ul className="carouselBanner flex items-center justify-center gap-12">
+              {Object.entries(logos.list1).map(([index, value]) => (
+                <li key={index} className="carouselBanner_item">
                   <Image
                     src={`/assets/logos_carousel/${value}`}
-                    alt={`${key} logo`}
+                    alt={`${value} logo`}
                     height={50}
                     width={70}
                     style={{ maxHeight: '50px' }}
                   />
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </Marquee>
           <div className="separator border-t-2 border-gray-800 w-2/3 relative mx-auto mb-10"></div>
           {/* Liste 2 */}
