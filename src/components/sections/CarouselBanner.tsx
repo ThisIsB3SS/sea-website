@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
+import logos from '../../../public/assets/logos_carousel/list_logos_carousel.json';
 
 export function CarouselBanner() {
   return (
@@ -21,7 +22,7 @@ export function CarouselBanner() {
             loop={0}
             className="mb-10"
           >
-            {/* <ul className="carouselBanner flex items-center justify-center gap-12">
+            <ul className="carouselBanner flex items-center justify-center gap-12">
               {Object.entries(logos.list1).map(([index, value]) => (
                 <li key={index} className="carouselBanner_item">
                   <Image
@@ -33,13 +34,7 @@ export function CarouselBanner() {
                   />
                 </li>
               ))}
-            </ul> */}
-            <Image
-              src={'/public/assets/logos_carousel/android.svg'}
-              alt="android"
-              width={50}
-              height={50}
-            />
+            </ul>
           </Marquee>
           <div className="separator border-t-2 border-gray-800 w-2/3 relative mx-auto mb-10"></div>
           {/* Liste 2 */}
