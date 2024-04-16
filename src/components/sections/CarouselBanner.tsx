@@ -14,7 +14,7 @@ export function CarouselBanner() {
       <div className="carouselBanner_innerContainer">
         <div className="carouselBanner_innerContainer2">
           {/* Liste 1 */}
-          {/* <Marquee
+          <Marquee
             play={true}
             direction="right"
             speed={40}
@@ -34,7 +34,7 @@ export function CarouselBanner() {
                 </li>
               ))}
             </ul>
-          </Marquee> */}
+          </Marquee>
           <div className="separator border-t-2 border-gray-800 w-2/3 relative mx-auto mb-10"></div>
           {/* Liste 2 */}
           {/* <Marquee play={true} direction="left" speed={40} loop={0}>
