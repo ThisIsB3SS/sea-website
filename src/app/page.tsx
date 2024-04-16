@@ -18,9 +18,9 @@ export default function Home() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* <div id="about"></div>
+        <div id="about"></div>
         <About />
-        <div id="services"></div>
+        {/* <div id="services"></div>
         <Services />
         <CarouselBanner />
       </div>
