@@ -18,7 +18,7 @@ export default function Home() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div id="about"></div>
+        {/* <div id="about"></div>
         <About />
         <div id="services"></div>
         <Services />
@@ -27,7 +27,7 @@ export default function Home() {
       <div id="projects"></div>
       <div className="projects-testimonials-wrapper z-0 w-full min-h-screen m-0 mb-6 flex flex-col justify-around ">
         <Projects />
-        <Testimonials />
+        <Testimonials /> */}
       </div>
     </main>
   );
