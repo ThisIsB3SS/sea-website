@@ -1,7 +1,7 @@
 'use client';
 import { useSubmit } from '@formspree/react';
 import { useForm } from 'react-hook-form';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Image from 'next/image';
 // import { Fireworks } from '@fireworks-js/react';
 type Inputs = {
@@ -76,11 +76,11 @@ export default function Contact(): React.JSX.Element {
     setError,
   } = useForm<Inputs>();
 
-  useEffect(() => {
-    if (isSubmitSuccessful) {
-      // fireScript();
-    }
-  }, [isSubmitSuccessful]);
+  // useEffect(() => {
+  //   if (isSubmitSuccessful) {
+  //     // fireScript();
+  //   }
+  // }, [isSubmitSuccessful]);
 
   const submit = useSubmit<Inputs>(
     process.env.NEXT_PUBLIC_REACT_APP_REACT_HOOK_FORM_ID as string,
@@ -163,7 +163,7 @@ export default function Contact(): React.JSX.Element {
           {isSubmitSuccessful ? (
             <div className="flex flex-col items-center mb-10 gap-10">
               {/* Firework animation */}
-              {<canvas className="canvas  w-full max-h-96 " />}
+              {/* {<canvas className="canvas  w-full max-h-96 " />} */}
               {/*  */}
               <h2 className="text-lg text-pretty text-white sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
                 Message bien reçu, nous vous répondrons bientôt !
