@@ -34,7 +34,7 @@ export function CarouselBanner() {
               ))}
             </ul> */}
             <Image
-              src={'/assets/logos_carousel/android.svg'}
+              src={'/public/assets/logos_carousel/android.svg'}
               alt="android"
               width={50}
               height={50}
