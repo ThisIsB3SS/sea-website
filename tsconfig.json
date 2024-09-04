@@ -15,6 +15,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "types": ["node", "react"],
     "incremental": true,
     "plugins": [
       {
@@ -33,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/icons/MenuBarIcon.tsx",
-    "src/app/contact/page.jsx",
+    "src/app/contact/page.tsx",
     "src/app/not-found.js"
   ],
   "exclude": [
