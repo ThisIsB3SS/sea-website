@@ -22,3 +22,6 @@ p {
 button {
   cursor: pointer;
 }
+body {
+height: 100vh;
+}
