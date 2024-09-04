@@ -68,7 +68,7 @@ type Inputs = {
 //     fireworks.start();
 //   }
 // };
-export default function Contact(): React.JSX.Element {
+export default function Contact() {
   const {
     formState: { errors, isSubmitSuccessful, isSubmitting },
     handleSubmit,
@@ -83,7 +83,7 @@ export default function Contact(): React.JSX.Element {
   // }, [isSubmitSuccessful]);
 
   const submit = useSubmit<Inputs>(
-    process.env.NEXT_PUBLIC_REACT_APP_REACT_HOOK_FORM_ID as string,
+    process.env.NEXT_PUBLIC_REACT_APP_REACT_HOOK_FORM_ID,
     {
       onError(errs) {
         const formErrs = errs.getFormErrors();
@@ -123,22 +123,11 @@ export default function Contact(): React.JSX.Element {
           height={200}
           className={
             isSubmitSuccessful
-              ? 'animate-move-up-and-down z-50 h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  mt-20'
-              : 'animate-rotate-yoyo h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  lg:mt-20'
+              ? 'animate-move-up-and-down z-50 h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  mt-20 z-1'
+              : 'animate-rotate-yoyo h-24 w-auto sm:h-20 md:h-32  lg:h-48  xl:h-60  lg:mt-20 z-1'
           }
         />
-        {/* youtube video hidden, "yeah !" */}
-        {isSubmitSuccessful ? (
-          <iframe
-            className="hidden"
-            aria-hidden="true"
-            src="https://www.youtube.com/embed/idA7RsiOpqA?si=2ZkPYk_nuP9rvp9D&amp;controls=0&autoplay=1"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-          />
-        ) : null}
+     
       </div>
 
       {/* Text content */}
@@ -162,9 +151,7 @@ export default function Contact(): React.JSX.Element {
         >
           {isSubmitSuccessful ? (
             <div className="flex flex-col items-center mb-10 gap-10">
-              {/* Firework animation */}
-              {/* {<canvas className="canvas  w-full max-h-96 " />} */}
-              {/*  */}
+            
               <h2 className="text-lg text-pretty text-white sm:text-xl lg:text-3xl font-montserrat font-bold text-center mt-10 animate__animated animate__headShake">
                 Message bien reçu, nous vous répondrons bientôt !
               </h2>
