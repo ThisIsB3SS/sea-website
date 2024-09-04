@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/icons/MenuBarIcon.tsx",
-    "src/app/contact/page.tsx",
+    "src/app/contact/page.jsx",
     "src/app/not-found.js"
   ],
   "exclude": [
