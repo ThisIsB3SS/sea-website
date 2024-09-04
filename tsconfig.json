@@ -30,12 +30,13 @@
   },
   "include": [
     "next-env.d.ts",
+     "env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/icons/MenuBarIcon.tsx",
     "src/app/contact/page.tsx",
-    "src/app/not-found.js"
+    "src/app/not-found.js",
   ],
   "exclude": [
     "node_modules"

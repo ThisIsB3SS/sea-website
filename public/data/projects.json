@@ -50,5 +50,18 @@
         ],
         "link": "https://www.conteuse-delphinedumas.fr/",
         "image": "/assets/projects_images/delphine-dumas.webp"
+    },
+    {
+        "title": "Yvonne Waska",
+        "type":"E-commerce",
+        "description": "This is a project description",
+        "tags": [
+            "Shopify",
+            "Luxe",
+            "Mode",
+            "E-commerce"
+        ],
+        "link": "https://www.yvonnewaska.com/",
+        "image":"yvonne-waska.webp"
     }
 ]
