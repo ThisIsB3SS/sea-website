@@ -6,7 +6,7 @@
         "tags": [
             "Wordpress",
             "Design",
-            "Developpement",
+            "From Scratch",
             "Site Vitrine"
         ],
         "link": "http://louisedesmons.com",
@@ -20,7 +20,7 @@
             "Wordpress",
             "Website",
             "Design",
-            "Developpement"
+            "From Scratch"
         ],
         "link": "http://www.gabriellealya.com",
         "image": "/assets/projects_images/gabrielle-alya.webp "
@@ -46,7 +46,7 @@
             "Wordpress",
             "Website",
             "Design",
-            "Developpement"
+            "From Scratch"
         ],
         "link": "https://www.conteuse-delphinedumas.fr/",
         "image": "/assets/projects_images/delphine-dumas.webp"
@@ -62,6 +62,6 @@
             "E-commerce"
         ],
         "link": "https://www.yvonnewaska.com/",
-        "image":"yvonne-waska.webp"
+        "image":"/assets/projects_images/yvonne-waska.webp"
     }
 ]
