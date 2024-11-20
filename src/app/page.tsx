@@ -1,19 +1,25 @@
+'use client';
 import { CarouselBanner } from '@/components/sections/CarouselBanner';
 import { Hero } from '@/components/sections/Hero';
 import { Projects } from '@/components/sections/Projects';
 import { About } from '@/components/sections/About';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Services } from '@/components/sections/Services';
-import bg1 from '../../public/assets/Eléments_Graphiques/Eléments_Graphiques/107_2.svg';
+import ModalForm from '@/components/sections/ModalForm';
+import background_1 from '/public/assets/background_1.svg';
+import useContactModalStore from '@/store/useContactModalStore';
 
 export default function Home() {
+  const { isOpen } = useContactModalStore();
+
   return (
-    <main className="w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-custom-gradient ">
+    <main className={`w-full min-h-screen flex flex-col  items-center justify-center p-0 gap-0 bg-custom-gradient relative ${isOpen ? 'overflow-hidden' : ''}`}>
+      <ModalForm />
       <Hero />
       <div
         className="about-carousel-banner-wrapper w-full min-h-screen m-0 flex flex-col justify-around "
         style={{
-          backgroundImage: `url(${bg1})`,
+          backgroundImage: `url(${background_1})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}

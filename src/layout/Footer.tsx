@@ -1,9 +1,11 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import '../../styles/custom.css';
+import '@/styles/custom.css';
 import Markdown from 'react-markdown';
-
+import useContactModalStore from '@/store/useContactModalStore';
 export function Footer() {
+  const { openModal } = useContactModalStore();
   return (
     <footer className="flex flex-col md:flex-row px-16 pb-4 justify-between items-center max-h-full min-h-32 text-white bg-gradient-to-t from-black to-custom-blue">
       {/* 1ère colonne */}
@@ -30,7 +32,10 @@ export function Footer() {
       {/* 2ème colonne */}
       <div className="CtaFooter  flex flex-col justify-center items-center gap-4 p-2 order-1 md:order-2">
         <div className="CtaFooter_wrapper w-auto text-nowrap text-3xl sm:text-4xl font-montserrat rounded-lg transition-all duration-300 ease-out bg-transparent hover:scale-105">
-          <Link href="/contact">
+          <Link href="" onClick={(e) => {
+            e.preventDefault();
+            openModal();
+          }}>
             <h2>Contactez-nous</h2>
           </Link>
         </div>
@@ -68,9 +73,14 @@ export function Footer() {
           </Link>
           {/* Gif Parrot */}
           <Link
-            href="/contact"
+            href=""
             aria-label="Contactez-nous avec le formulaire de contact"
+            onClick={(e) => {
+              e.preventDefault();
+              openModal();
+            }}
           >
+
             <Image
               unoptimized={true}
               src="/assets/parrot-party.gif"
@@ -81,7 +91,7 @@ export function Footer() {
           </Link>
           {/* Github */}
           <Link
-            href="https://github.com/beseb"
+            href="https://github.com/ThisIsB3SS"
             target="_blank"
             aria-label="Follow us on Github !"
           >

@@ -1,11 +1,16 @@
 import '../../styles/custom.css';
-
+import useContactModalStore from '@/store/useContactModalStore';
 export function CtaSection() {
+  const { openModal } = useContactModalStore();
   return (
     <div className="hero_cta_section group z-10 box-content lg:p-16 mt-8 sm:mt-20 mb-10 mx-auto  animate__animated animate__fadeIn">
       <a
-        href="contact"
+        href=""
         className="flex justify-center items-center text-center"
+        onClick={(e) => {
+          e.preventDefault();
+            openModal();
+        }}
       >
         <div className=" flex flex-col p-6  sm:w-auto sm:flex-row sm:p-10 gap-4 justify-around items-center   border border-gray-50 shadow-md rounded-3xl sm:rounded-full bg-white bg-opacity-50 backdrop-blur-xl transition-all duration-300 ease-in-out  hover:border-blue-700">
           <h2 className="font-montserrat text-pretty text-xl xl:text-2xl italic text-slate-800  ">

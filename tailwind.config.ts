@@ -113,7 +113,10 @@ const config = {
           from:{transform: 'translateY(100%)'},
           to:{transform: 'translateY(0)'},
         },
-    
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
     
      
       },
@@ -128,6 +131,7 @@ const config = {
         'flip': 'flip 2s ease',
         'fullWidth': 'fullWidth 0.5s ease-in-out forwards',
         'fullHeight': 'fullWidth 0.5s ease-in-out forwards',
+        'fadeIn': 'fadeIn 0.15s ease-in-out ',
 
       },
       fontFamily: {

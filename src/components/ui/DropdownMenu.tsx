@@ -1,6 +1,7 @@
 import { ReactEventHandler } from 'react';
 import '../../styles/custom.css';
 import Link from 'next/link';
+import useContactModalStore from '@/store/useContactModalStore';
 
 function DropdownMenu({
   isOpen,
@@ -29,7 +30,7 @@ function DropdownMenu({
     // Appelle la fonction onToggle pour fermer le menu et remonter l'état au composant parent, le Header
     onToggle(false);
   };
-
+  const { openModal } = useContactModalStore();
   return (
     <div
       className={`dropdown-menu-content  absolute top-0 right-0   flex justify-center border-white border-opacity-25 shadow-md bg-white bg-opacity-50  backdrop-blur-xl rounded-2xl transition-all duration-300  ${
@@ -101,12 +102,16 @@ function DropdownMenu({
           </a>
         </li>
         <li className={isOpen ? 'animate__animated animate__fadeInUp' : ''}>
-          <Link
+          <a
             className={
               isOpen ? 'dropdown-menu-content-item font-semibold ' : ''
             }
-            href="/contact"
-            onClick={closeDropdown}
+            href=""
+            onClick={(e) => {
+              e.preventDefault();
+              closeDropdown(e);
+              openModal();
+            }}
           >
             <span
               className={
@@ -117,7 +122,7 @@ function DropdownMenu({
             >
               Contact
             </span>
-          </Link>
+          </a>
         </li>
       </ul>
     </div>

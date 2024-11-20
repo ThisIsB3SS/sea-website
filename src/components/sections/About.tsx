@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import aboutImage from '/public/assets/about-image.svg';
+import useContactModalStore from '@/store/useContactModalStore';
 export function About() {
+  const { openModal } = useContactModalStore();
   return (
     <div className="About_section w-full flex flex-col justify-center items-center px-6 md:px-20 mt-10 md:mt-20 animate__animated animate__slideInLeft">
       <div className="About_content_1  w-full">
@@ -45,8 +47,8 @@ export function About() {
             sur-mesure qui captivent votre audience et dynamisent votre
             activité.
           </p>
-          <button className="button group ">
-            <a href="/contact" className='text-blue-800 group-hover:text-white transition-all duration-200'>Nous contacter</a>
+          <button className="button group text-blue-800 group-hover:text-white transition-all duration-200" onClick={openModal}>
+            Nous contacter
           </button>
         </div>
       </div>

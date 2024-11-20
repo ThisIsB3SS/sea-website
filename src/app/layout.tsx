@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Header } from '@/components/components/Header';
-import { Footer } from '@/components/components/Footer';
+import { Header } from '@/layout/Header';
+import { Footer } from '@/layout/Footer';
 import { OnlineBusiness, Thing, WithContext } from 'schema-dts';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import '../styles/globals.css';
