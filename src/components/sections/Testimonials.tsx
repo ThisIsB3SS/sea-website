@@ -3,7 +3,7 @@ import testimonials from '../../../public/data/testimonials.json';
 import keywords from '../../../public/data/keywords.json';
 import { QuoteIconStart, QuoteIconEnd } from '../icons/QuoteIcon';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ArrowRightIcon, ArrowLeftIcon } from '@radix-ui/react-icons';
 
 export function Testimonials() {
@@ -20,7 +20,38 @@ export function Testimonials() {
   }, 5000);
 
   const element = testimonials[index];
-
+  const testimonialsCodeur = async () => {
+    try {
+      const response = await fetch(
+        'https://www.codeur.com/-sebastien_sq/evaluations.json',
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            Accept: '*/*',
+            'max-age': '0',
+            private: 'true',
+            'must-revalidate': 'true',
+            'cache-control': 'no-cache',
+            'x-requested-for': 'XMLHttpRequest',
+            'user-agent':
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Safari/537.36',
+            connection: 'keep-alive',
+            'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+          },
+        }
+      );
+      const data = await response.json();
+      console.log(data);
+      return data;
+    } catch (error) {
+      console.error('Error fetching testimonials:', error);
+    }
+  };
+  useEffect(() => {
+    testimonialsCodeur();
+  }, []);
   return (
     <div className="Testimonials_section w-full flex flex-col justify-center items-center px-6 md:px-20 mt-10 md:mt-20">
       <div className="Testimonials_content_1  w-full">
